@@ -2,8 +2,8 @@
 import React, { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Projects from "./Projects";
-import WyvateExperience from "./ExperienceSection";
 import Skills from "./Skills";
+import ExperienceList from "./ExperienceSection";
 
 const Tabs: React.FC = () => {
   const router = useRouter();
@@ -39,9 +39,9 @@ const Tabs: React.FC = () => {
 
       {/* Tab Content */}
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="mt-6 text-center text-white text-xl">
+        <div className="mt-6 text-center text-white text-xl border-b border-zinc-700 pb-2">
           {activeTab === "projects" && <Projects />}
-          {activeTab === "experience" && <WyvateExperience />}
+          {activeTab === "experience" && <ExperienceList />}
           {activeTab === "skills" && <Skills/>}
         </div>
       </Suspense>
