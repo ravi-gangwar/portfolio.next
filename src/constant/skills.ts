@@ -51,6 +51,9 @@ export const skills = [
       { name: "Git", image: "" },
       { name: "GitHub", image: "" },
       { name: "Nginx", image: "" },
+      { name: "Android studio", image: "" },
+      { name: "xcode", image: "" },
+
     ]
   },
   {
