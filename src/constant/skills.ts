@@ -1,84 +1,77 @@
 export const skills = [
-  // Frontend Skills
   {
     category: "frontend",
     skills: [
-      { name: "React", image: "/skills/react.svg" },
-      { name: "Next.js", image: "/skills/nextjs.svg" },
-      { name: "TypeScript", image: "/skills/typescript.svg" },
-      { name: "Tailwind CSS", image: "/skills/tailwind.svg" },
-      { name: "Redux", image: "/skills/redux.svg" },
-      { name: "GraphQL", image: "/skills/graphql.svg" },
-      { name: "HTML", image: "/skills/html.svg" },
-      { name: "CSS", image: "/skills/css.svg" },
-      { name: "React Native", image: "/skills/react-native.svg" }
+      { name: "React", image: "/skills/react.png" },
+      { name: "Next.js", image: "/skills/next.png" },
+      { name: "JavaScript", image: "/skills/js.png" },
+      { name: "TypeScript", image: "/skills/typescript.png" },
+      { name: "Tailwind CSS", image: "" },
+      { name: "Redux", image: "" },
+      { name: "GraphQL", image: "" },
+      { name: "HTML", image: "" },
+      { name: "CSS", image: "" },
+      { name: "React Native", image: "" }
     ]
   },
   
-  // Backend Skills
   {
     category: "backend",
     skills: [
-      { name: "Node.js", image: "/skills/nodejs.svg" },
-      { name: "Express", image: "/skills/express.svg" },
-      { name: "MongoDB", image: "/skills/mongodb.svg" },
-      { name: "MySQL", image: "/skills/mysql.svg" },
-      { name: "PostgreSQL", image: "/skills/postgresql.svg" },
-      { name: "GraphQL", image: "/skills/graphql.svg" },
-      { name: "Firebase", image: "/skills/firebase.svg" },
+      { name: "Node.js", image: "" },
+      { name: "Express", image: "" },
+      { name: "MongoDB", image: "" },
+      { name: "MySQL", image: "" },
+      { name: "PostgreSQL", image: "" },
+      { name: "GraphQL", image: "" },
+      { name: "Firebase", image: "" },
     ]
   },
 
-  // Libraries Used in React & Next.js
   {
     category: "libraries",
     skills: [
-      { name: "React Router", image: "/skills/react-router.svg" },
-      { name: "Axios", image: "/skills/axios.svg" },
-      { name: "Styled Components", image: "/skills/styled-components.svg" },
-      { name: "Framer Motion", image: "/skills/framer-motion.svg" },
-      { name: "Redux Toolkit", image: "/skills/redux-toolkit.svg" },
-      { name: "Formik", image: "/skills/formik.svg" },
-      { name: "React Query", image: "/skills/react-query.svg" },
+      { name: "React Router", image: "" },
+      { name: "Axios", image: "" },
+      { name: "Styled Components", image: "" },
+      { name: "Framer Motion", image: "" },
+      { name: "Redux Toolkit", image: "" },
+      { name: "Formik", image: "" },
+      { name: "React Query", image: "" },
     ]
   },
 
-  // Tools
   {
     category: "tools",
     skills: [
-      { name: "VS Code", image: "/skills/vscode.svg" },
-      { name: "Postman", image: "/skills/postman.svg" },
-      { name: "IntelliJ IDEA", image: "/skills/intellij.svg" },
-      { name: "Docker", image: "/skills/docker.svg" },
-      { name: "Git", image: "/skills/git.svg" },
-      { name: "GitHub", image: "/skills/github.svg" },
-      { name: "Nginx", image: "/skills/nginx.svg" },
+      { name: "VS Code", image: "" },
+      { name: "Postman", image: "" },
+      { name: "IntelliJ IDEA", image: "" },
+      { name: "Docker", image: "" },
+      { name: "Git", image: "" },
+      { name: "GitHub", image: "" },
+      { name: "Nginx", image: "" },
     ]
   },
-
-  // DevOps Skills
   {
     category: "devops",
     skills: [
-      { name: "AWS", image: "/skills/aws.svg" },
-      { name: "Azure", image: "/skills/azure.svg" },
-      { name: "Google Cloud", image: "/skills/gcp.svg" },
-      { name: "Jenkins", image: "/skills/jenkins.svg" },
-      { name: "Kubernetes", image: "/skills/kubernetes.svg" },
-      { name: "Terraform", image: "/skills/terraform.svg" },
-      { name: "CI/CD", image: "/skills/cicd.svg" },
+      { name: "AWS", image: "" },
+      { name: "Azure", image: "" },
+      { name: "Google Cloud", image: "" },
+      { name: "Jenkins", image: "" },
+      { name: "Kubernetes", image: "" },
+      { name: "Terraform", image: "" },
+      { name: "CI/CD", image: "" },
     ]
   },
-
-  // Operating Systems
   {
     category: "os",
     skills: [
-      { name: "Linux (Ubuntu)", image: "/skills/ubuntu.svg" },
-      { name: "Linux (Kali)", image: "/skills/kali-linux.svg" },
-      { name: "macOS", image: "/skills/macos.svg" },
-      { name: "Windows", image: "/skills/windows.svg" },
+      { name: "Linux (Ubuntu)", image: "" },
+      { name: "Linux (Kali)", image: "" },
+      { name: "macOS", image: "" },
+      { name: "Windows", image: "" },
     ]
   }
 ];

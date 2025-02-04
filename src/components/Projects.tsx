@@ -1,81 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectsCard';
-
-// Define the type for a project
-type Project = {
-  githubLink: string;
-  liveLink: string;
-  image: string;
-  name: string;
-};
-
-// Define the type for the projects category
-type ProjectsCategory = {
-  title: string;
-  projects: Project[];
-};
-
-// Store project data in a TypeScript object
-const projectsData: ProjectsCategory[] = [
-  {
-    title: '🚀 Personal Projects',
-    projects: [
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth',
-        liveLink: 'https://greenearth1.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 1.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-    ],
-  },
-  {
-    title: '💼 Internship Projects',
-    projects: [
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth',
-        liveLink: 'https://greenearth1.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 1.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-      {
-        githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
-        image: 'https://greenearth2.vercel.app/greenearth.svg',
-        name: 'greenEarth 2.0',
-      },
-    ],
-  },
-];
+import { projectsData } from '@/constant/projects';
 
 const Projects = () => {
   return (
@@ -87,6 +12,8 @@ const Projects = () => {
             {category.projects.map((project, idx) => (
               <ProjectCard
                 key={idx}
+                appleStoreLink={project.appleStoreLink}
+                playStoreLink={project.playStoreLink}
                 githubLink={project.githubLink}
                 liveLink={project.liveLink}
                 image={project.image}
