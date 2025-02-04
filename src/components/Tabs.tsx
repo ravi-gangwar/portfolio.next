@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Projects from "./Projects";
 import WyvateExperience from "./ExperienceSection";
@@ -37,11 +37,13 @@ const Tabs: React.FC = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-6 text-center text-white text-xl">
-        {activeTab === "projects" && <Projects/>}
-        {activeTab === "experience" && <WyvateExperience/>}
-        {activeTab === "skills" && <h1>🛠 Skills</h1>}
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="mt-6 text-center text-white text-xl">
+          {activeTab === "projects" && <Projects />}
+          {activeTab === "experience" && <WyvateExperience />}
+          {activeTab === "skills" && <h1>🛠 Skills</h1>}
+        </div>
+      </Suspense>
     </div>
   );
 };

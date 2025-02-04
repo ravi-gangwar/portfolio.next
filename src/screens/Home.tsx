@@ -1,12 +1,14 @@
 import Profile from '@/components/Profile';
 import Tabs from '@/components/Tabs';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 const HomeScreen = () => {
   return (
     <div className="min-h-screen">
         <Profile/>
-        <Tabs/>
+        <Suspense>
+          <Tabs/>
+        </Suspense>
     </div>
   );
 };
