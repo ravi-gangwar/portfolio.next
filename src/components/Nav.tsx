@@ -4,8 +4,11 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { AiFillHome } from "react-icons/ai";
 import { IoMdMenu } from "react-icons/io";
 import Icon from "./Icon";
+import { useAppContext } from "@/context/AppContext";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(true);
   let lastScrollY = 0;
 
@@ -26,6 +29,18 @@ const Nav = () => {
     { id: "back", icon: FaArrowLeftLong },
   ];
 
+    const ctx = useAppContext();
+    const handleClick = (id: string) => {
+      if(id === "menu") {
+        ctx.toggleModal();
+      }else if(id === "home"){
+        router.push("/");
+      }else{
+        router.back();
+      }
+      return;
+    }
+
   return (
     <div
       className={`fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] lg:max-w-[35vw] h-14 flex justify-around items-center rounded-2xl 
@@ -35,7 +50,7 @@ const Nav = () => {
       {tabs.map(({ id, icon }) => (
         <button
           key={id}
-          onClick={() => {}}
+          onClick={() => handleClick(id)}
           className="p-3 rounded-full transition-all duration-300 flex items-center justify-center"
         >
           <Icon IconButton={icon} color="white" size="20" />
