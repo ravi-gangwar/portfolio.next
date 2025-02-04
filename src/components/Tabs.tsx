@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Projects from "./Projects";
 import WyvateExperience from "./ExperienceSection";
+import Skills from "./Skills";
 
 const Tabs: React.FC = () => {
   const router = useRouter();
@@ -41,7 +42,7 @@ const Tabs: React.FC = () => {
         <div className="mt-6 text-center text-white text-xl">
           {activeTab === "projects" && <Projects />}
           {activeTab === "experience" && <WyvateExperience />}
-          {activeTab === "skills" && <h1>🛠 Skills</h1>}
+          {activeTab === "skills" && <Skills/>}
         </div>
       </Suspense>
     </div>
