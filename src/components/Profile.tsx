@@ -29,7 +29,7 @@ const CoverImageWithProfile = () => {
           objectFit="cover"
           src={profileURL}
           alt="Profile Picture"
-          className="h-40 md:h-80 lg:h-96 w-full object-cover rounded-full"
+          className="h-40 w-full object-cover rounded-full"
         />
       </div>
     </section>

@@ -3,9 +3,6 @@ import { FaGithub, FaApple, FaGooglePlay } from "react-icons/fa";
 import { FaEarthAsia } from "react-icons/fa6";
 
 import CoverImage from "./CustomImage";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 
 interface ProjectCardProps {
   image: string;
@@ -21,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, name, liveLink, github
   return (
     <div
       onClick={onClick}
-      className={`relative rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 w-full backdrop-blur-lg border border-zinc-700 cursor-pointer ${inter.className}`}
+      className={`relative rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 w-full backdrop-blur-lg border border-zinc-700 cursor-pointer`}
     >
       <div className="relative w-full h-28 overflow-hidden rounded-md">
         <CoverImage src={image} alt={name} objectFit="contain" className="w-full h-full rounded-md" />
