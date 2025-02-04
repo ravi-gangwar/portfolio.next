@@ -1,5 +1,6 @@
 import React from "react";
 import CustomImage from "./CustomImage";
+import { coverURL, profileURL } from "@/constant/other";
 
 const Profile: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const CoverImageWithProfile = () => {
       {/* Cover Image Container */}
       <div className="relative w-[90%] rounded-3xl overflow-hidden shadow-lg">
         <CustomImage
-          src="/cover.jpeg "
+          src={coverURL}
           alt="Cover Photo"
           className="h-64 md:h-80 lg:h-96 w-full object-cover"
         />
@@ -25,9 +26,10 @@ const CoverImageWithProfile = () => {
       {/* Profile Image */}
       <div className="relative -mt-14 w-28 h-28 rounded-full overflow-hidden border-4 border-gray-800 shadow-md">
         <CustomImage
-          src="/PortfolioProfile.jpg"
+          objectFit="cover"
+          src={profileURL}
           alt="Profile Picture"
-          className="h-64 md:h-80 lg:h-96 w-full object-cover rounded-full"
+          className="h-40 md:h-80 lg:h-96 w-full object-cover rounded-full"
         />
       </div>
     </section>

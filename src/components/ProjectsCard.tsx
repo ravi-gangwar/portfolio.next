@@ -1,5 +1,7 @@
 import React from "react";
-import { FaExternalLinkAlt, FaGithub, FaApple, FaGooglePlay } from "react-icons/fa";
+import { FaGithub, FaApple, FaGooglePlay } from "react-icons/fa";
+import { FaEarthAsia } from "react-icons/fa6";
+
 import CoverImage from "./CustomImage";
 import { Inter } from "next/font/google";
 
@@ -45,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, name, liveLink, github
         )}
         {liveLink && (
           <a href={liveLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-transform transform hover:scale-110">
-            <FaExternalLinkAlt size={18} />
+            <FaEarthAsia size={18} />
           </a>
         )}
       </div>
