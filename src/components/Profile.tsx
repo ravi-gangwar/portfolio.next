@@ -14,11 +14,11 @@ const CoverImageWithProfile = () => {
   return (
     <section className="w-full flex flex-col items-center">
       {/* Cover Image Container */}
-      <div className="relative w-[95vw] h-[30vh] rounded-3xl overflow-hidden shadow-lg">
+      <div className="relative w-[90%] rounded-3xl overflow-hidden shadow-lg">
         <CustomImage
           src="https://i.pinimg.com/736x/a0/57/af/a057afe4ded4705c350f58f5be2521af.jpg"
           alt="Cover Photo"
-          className="h-64 md:h-80 lg:h-96 w-full h-full object-cover"
+          className="h-64 md:h-80 lg:h-96 w-full object-cover"
         />
       </div>
 

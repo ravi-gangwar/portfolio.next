@@ -28,8 +28,8 @@ const Nav = () => {
 
   return (
     <div
-      className={`fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] h-14 flex justify-around items-center rounded-2xl 
-        backdrop-blur-md shadow-lg border border-zinc-700 transition-all duration-500
+      className={`fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] lg:max-w-[35vw] h-14 flex justify-around items-center rounded-2xl 
+      backdrop-blur-md shadow-lg border border-zinc-700 transition-all duration-500
         ${isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"}`}
     >
       {tabs.map(({ id, icon }) => (

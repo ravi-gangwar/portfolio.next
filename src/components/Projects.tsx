@@ -83,7 +83,7 @@ const Projects = () => {
       {projectsData.map((category, index) => (
         <div key={index}>
           <Heading name={category.title} />
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 mt-4">
             {category.projects.map((project, idx) => (
               <ProjectCard
                 key={idx}

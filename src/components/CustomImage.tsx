@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 type TCoverImage = {
@@ -17,12 +16,12 @@ const CoverImage: React.FC<TCoverImage> = ({
   priority = false,
 }) => {
   return (
-    <div className={`relative w-full ${className}`}>
+    <div className={`${className} relative`}>
       <Image
         src={src}
         alt={alt}
-        layout="fill" // Makes the image span the entire container
-        objectFit={objectFit} // Ensures the image fills the area correctly
+        fill
+        style={{ objectFit }}
         priority={priority}
         className="rounded-lg"
       />

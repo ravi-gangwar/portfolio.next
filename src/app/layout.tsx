@@ -12,6 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <header>
+        <meta name="theme-color" content="#0F172A" />
+      </header>
       <body
         className={''}
       >

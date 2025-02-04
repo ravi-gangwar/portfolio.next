@@ -14,17 +14,9 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, name, liveLink, githubLink, onClick }) => {
   return (
-    <div
-      onClick={onClick}
-      className={`relative rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-[48%] md:w-[30%] lg:w-[23%] xl:w-[18%] backdrop-blur-lg border border-zinc-700 cursor-pointer ${inter.className}`}
-    >
-      <div className="relative w-full h-36 sm:h-40 md:h-48 overflow-hidden rounded-md">
-        <CoverImage
-          src={image}
-          alt={name}
-          objectFit="cover"
-          className="w-full h-full rounded-md"
-        />
+    <div onClick={onClick} className={`relative rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 w-full backdrop-blur-lg border border-zinc-700 cursor-pointer ${inter.className}`}>
+      <div className="relative w-full h-28 overflow-hidden rounded-md">
+        <CoverImage src={image} alt={name} objectFit="contain" className="w-full h-full rounded-md" />
       </div>
       <h3 className="text-white text-base font-semibold mt-3">{name}</h3>
       <div className="flex gap-4 mt-3">
