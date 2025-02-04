@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 export const metadata: Metadata = {
   title: "Ravi",
   description: "Ravi gangwar porfolio website",
@@ -16,7 +15,7 @@ export default function RootLayout({
       <body
         className={''}
       >
-        {children}
+          {children}
       </body>
     </html>
   );

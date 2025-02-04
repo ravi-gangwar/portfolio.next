@@ -13,3 +13,18 @@
     --foreground: #ededed;
   }
 }
+
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* For Edge and IE */
+html {
+  -ms-overflow-style: none;
+}
