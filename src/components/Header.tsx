@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
 import { Lavishly_Yours } from "next/font/google";
-import useGetUserCount from "@/hooks/useGetUserCount";
 import { FaUserFriends } from "react-icons/fa";
 import useUniqueUserRegister from "@/hooks/useUniqueUserRegister";
+import Loader from "./Loader";
 
 const lavishlyYours = Lavishly_Yours({ subsets: ["latin"], weight: "400" });
 
 const Header: React.FC = () => {
-  useUniqueUserRegister();
-  const count = useGetUserCount();
+  const {isLoading, visitorCount} = useUniqueUserRegister();
   
   return (
     <header className="relative flex items-center justify-center py-4 w-full border-b border-zinc-700 shadow-md">
@@ -21,7 +20,10 @@ const Header: React.FC = () => {
       {/* Views aligned to the right */}
       <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex items-center gap-1">
         <FaUserFriends color="white" size={18} />
-        <p className="text-white text-center text-sm">{count}</p>
+        {
+          isLoading ? <Loader/> :
+          <p className="text-white text-center text-sm">{visitorCount}</p>
+          }
       </div>
     </header>
   );
