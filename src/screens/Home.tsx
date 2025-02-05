@@ -1,3 +1,4 @@
+import AudioPlayer from '@/components/AudioPlayer';
 import ButtonSection from '@/components/ButtonSection';
 import Profile from '@/components/Profile';
 import Tabs from '@/components/Tabs';
@@ -9,6 +10,7 @@ const HomeScreen = () => {
     <div className="min-h-screen">
         <Profile/>
         <ButtonSection/>
+        <AudioPlayer/>
         <Suspense>
           <Tabs/>
         </Suspense>

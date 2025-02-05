@@ -1,11 +1,14 @@
+"use client"
 import Header from "@/components/Header";
 import MenuModal from "@/components/MenuModal";
 import Nav from "@/components/Nav";
 import { AppProvider } from "@/context/AppContext";
+import useUniqueUserRegister from "@/hooks/useUniqueUserRegister";
 import HomeScreen from "@/screens/Home";
 import Head from "next/head";
 
 export default function Home() {
+  useUniqueUserRegister();
   return (
     <AppProvider>
       <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black">

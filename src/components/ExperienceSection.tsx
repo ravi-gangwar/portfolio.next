@@ -16,7 +16,7 @@ const ExperienceSection: React.FC<TExperience> = ({
     <div className="max-w-4xl mx-auto p-6 md:p-8 text-white shadow-2xl rounded-2xl mb-8 transform transition-all">
       <div className="flex flex-col mb-6">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-white mb-1">{role}</h2>
+          <h2 className="text-lg sm:text-2xl font-bold text-white mb-1">{role}</h2>
           <p className="text-lg text-gray-400 font-medium">{companyName}</p>
         </div>
         <div className="flex justify-between items-center">
@@ -58,7 +58,7 @@ const ExperienceSection: React.FC<TExperience> = ({
         <h3 className="text-2xl font-bold text-white mb-4">Projects</h3>
         <ul className="space-y-3">
           {projects.map((project, index) => (
-            <li key={index} className="flex items-center">
+            <li key={index} className="flex items-center text-left">
               <span className="text-blue-500 mr-3">•</span>
               <p className="text-gray-300 text-sm">{project}</p>
             </li>

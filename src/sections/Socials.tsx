@@ -14,7 +14,7 @@ const SocialCard: React.FC<SocialCardProps> = ({ link, Icon }) => {
       rel="noopener noreferrer"
       className="flex flex-col items-center justify-center w-15 h-15 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-opacity-80"
     >
-        <Icon className="text-blue-400 text-2xl sm:text-4xl" />
+        <Icon className="text-yellow-400 text-2xl sm:text-4xl" />
     </a>
   );
 };

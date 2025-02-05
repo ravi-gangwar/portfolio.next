@@ -28,3 +28,23 @@
 html {
   -ms-overflow-style: none;
 }
+
+@keyframes glowingBorder {
+  0% {
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px #ffcc00, 0 0 8px #ffcc00, 0 0 10px #ffcc00;
+  }
+  50% {
+    border-color: #ffdd44;
+    box-shadow: 0 0 10px #ffdd44, 0 0 15px #ffdd44, 0 0 20px #ffdd44;
+  }
+  100% {
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+  }
+  }
+
+.border-animated {
+  border-style: solid;
+  animation: glowingBorder 10s infinite alternate;
+}

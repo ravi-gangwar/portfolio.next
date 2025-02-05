@@ -13,7 +13,6 @@ const CoverImage: React.FC<TCoverImage> = ({
   alt,
   className = "",
   objectFit = "cover",
-  priority = false,
 }) => {
   return (
     <div className={`${className} relative`}>
@@ -22,7 +21,6 @@ const CoverImage: React.FC<TCoverImage> = ({
         alt={alt}
         fill
         style={{ objectFit }}
-        priority={priority}
         className="rounded-lg"
       />
     </div>
