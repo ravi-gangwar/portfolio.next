@@ -6,7 +6,7 @@ const Profile: React.FC = () => {
   return (
     <div className="flex flex-col items-center text-white">
       <CoverImageWithProfile />
-      <Introduction/>
+      <Introduction />
     </div>
   );
 };
@@ -38,12 +38,14 @@ const CoverImageWithProfile = () => {
 
 const Introduction = () => {
   return (
-      <div className="text-center mt-4">
-        <h1 className="text-3xl font-bold">Ravi Gangwar</h1>
-        <p className="text-lg text-gray-300">Full Stack & DevOps Engineer</p>
-        <p className="text-md text-gray-400">B.Tech 2026 - Information Technology</p>
-      </div>
-  )
-}
+    <div className="text-center mt-4">
+      <h1 className="text-3xl font-bold">Ravi Gangwar</h1>
+      <p className="text-lg text-gray-300">Full Stack & DevOps Engineer</p>
+      <p className="text-md text-gray-400">
+        B.Tech 2026 - Information Technology
+      </p>
+    </div>
+  );
+};
 
 export default Profile;

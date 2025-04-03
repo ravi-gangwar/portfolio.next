@@ -19,8 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <header>
         <meta name="theme-color" content="#0F172A" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </header>
-      <body className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}>
+      <body
+        className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}
+      >
         {children}
       </body>
     </html>
