@@ -20,7 +20,7 @@ export default function RootLayout({
       <header>
         <meta name="theme-color" content="#0F172A" />
       </header>
-      <body className={aldrich.className}>
+      <body className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}>
         {children}
       </body>
     </html>
