@@ -4,9 +4,9 @@ export const projectData = {
     name: "GreenEarth",
     tagline: "Empowering Sustainable Living Through Technology",
     coverImages: [
-      "/assets/greenearth-cover-1.jpg",
-      "/assets/greenearth-cover-2.jpg",
-      "/assets/greenearth-cover-3.jpg",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],
     techStack: [
       "Next.js",
@@ -69,10 +69,9 @@ The platform features an intuitive marketplace for eco-friendly products, real-t
       "Implemented user authentication and profile management",
     ],
     screenshots: [
-      "/assets/marketplace-view.jpg",
-      "/assets/carbon-calculator.jpg",
-      "/assets/community-forum.jpg",
-      "/assets/impact-dashboard.jpg",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],
     links: {
       live: "https://greenearth.com",
