@@ -29,23 +29,27 @@ const Nav = () => {
     { id: "back", icon: FaArrowLeftLong },
   ];
 
-    const ctx = useAppContext();
-    const handleClick = (id: string) => {
-      if(id === "menu") {
-        ctx.toggleModal();
-      }else if(id === "home"){
-        router.push("/");
-      }else{
-        router.back();
-      }
-      return;
+  const ctx = useAppContext();
+  const handleClick = (id: string) => {
+    if (id === "menu") {
+      ctx.toggleModal();
+    } else if (id === "home") {
+      router.push("/");
+    } else {
+      router.back();
     }
+    return;
+  };
 
   return (
     <div
-      className={`fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] lg:max-w-[35vw] h-14 flex justify-around items-center rounded-2xl 
+      className={` z-50 fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] lg:max-w-[35vw] h-14 flex justify-around items-center rounded-2xl 
       backdrop-blur-md shadow-lg border border-zinc-700 transition-all duration-500
-        ${isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"}`}
+        ${
+          isVisible
+            ? "translate-y-0 opacity-100"
+            : "translate-y-20 opacity-0 pointer-events-none"
+        }`}
     >
       {tabs.map(({ id, icon }) => (
         <button
