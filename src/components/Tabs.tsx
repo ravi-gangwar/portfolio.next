@@ -1,19 +1,17 @@
 "use client";
-import React, { Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import React, { useState, Suspense } from "react";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import ExperienceList from "./ExperienceSection";
 import { FaProjectDiagram, FaUserTie, FaTools } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Tabs: React.FC = () => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
   const names = ["projects", "experience", "skills"];
-  const activeTab = searchParams.get("tab") || names[0];
+  const [activeTab, setActiveTab] = useState(names[0]);
 
   const handleTabChange = (tabName: string) => {
-    router.push(`?tab=${tabName}`);
+    setActiveTab(tabName);
   };
 
   return (
@@ -35,7 +33,11 @@ const Tabs: React.FC = () => {
             {tabName === "skills" && <FaTools size={18} />}
             {tabName.charAt(0).toUpperCase() + tabName.slice(1)}
             {activeTab === tabName && (
-              <span className="absolute bottom-[-2px] left-0 w-full h-[1px] bg-white rounded-md"></span>
+              <motion.span
+                className="absolute bottom-[-2px] left-0 w-full h-[1px] bg-white rounded-md"
+                layoutId="underline"
+                transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              ></motion.span>
             )}
           </button>
         ))}
@@ -43,11 +45,17 @@ const Tabs: React.FC = () => {
 
       {/* Tab Content */}
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="mt-6 text-center text-white text-xl border-b border-zinc-700 pb-2">
+        <motion.div
+          className="mt-6 text-center text-white text-xl border-b border-zinc-700 pb-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
           {activeTab === "projects" && <Projects />}
           {activeTab === "experience" && <ExperienceList />}
-          {activeTab === "skills" && <Skills/>}
-        </div>
+          {activeTab === "skills" && <Skills />}
+        </motion.div>
       </Suspense>
     </div>
   );

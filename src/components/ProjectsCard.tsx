@@ -3,8 +3,7 @@ import { FaGithub, FaApple, FaGooglePlay } from "react-icons/fa";
 import { FaEarthAsia } from "react-icons/fa6";
 
 import CoverImage from "./CustomImage";
-// import { useRouter } from "next/navigation";
-
+import { useRouter } from "next/navigation";
 interface ProjectCardProps {
   image: string;
   name: string;
@@ -22,11 +21,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   appleStoreLink,
   playStoreLink,
 }) => {
-  // const router = useRouter();
+  const router = useRouter();
+  const handleCardClick = (
+    e: React.MouseEvent<HTMLDivElement>,
+    name: string
+  ) => {
+    router.push(`/p/${name}`);
+  };
+
   return (
     <div
-      // onClick={() => router.push(`/p/${name}`)}
-      className={`relative rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 w-full backdrop-blur-lg border border-zinc-700 cursor-pointer`}
+      className="relative rounded-xl p-4 shadow-lg w-full backdrop-blur-lg border border-zinc-700 cursor-pointer"
+      onClick={(e) => handleCardClick(e, name)}
     >
       <div className="relative w-full h-28 overflow-hidden rounded-md">
         <CoverImage
@@ -38,14 +44,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <h3 className="text-white text-base font-semibold mt-3">{name}</h3>
 
-      {/* Icons Section */}
+      <div className="absolute top-0 left-0 bg-zinc-800 text-white text-sm p-2 rounded-md opacity-0 pointer-events-none">
+        Click me
+      </div>
+
       <div className="flex gap-4 mt-3">
         {appleStoreLink && (
           <a
             href={appleStoreLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white transition-transform transform hover:scale-110"
+            className="text-gray-300 hover:text-white"
           >
             <FaApple size={20} />
           </a>
@@ -55,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={playStoreLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-400 hover:text-white transition-transform transform hover:scale-110"
+            className="text-green-400 hover:text-white"
           >
             <FaGooglePlay size={18} />
           </a>
@@ -65,7 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-transform transform hover:scale-110"
+            className="text-gray-400 hover:text-white"
           >
             <FaGithub size={18} />
           </a>
@@ -75,7 +84,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition-transform transform hover:scale-110"
+            className="text-blue-400 hover:text-blue-300"
           >
             <FaEarthAsia size={18} />
           </a>

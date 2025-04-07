@@ -24,12 +24,12 @@ const CoverImageWithProfile = () => {
       </div>
 
       {/* Profile Image */}
-      <div className="relative -mt-14 w-28 h-28 rounded-full overflow-hidden border-4 shadow-md border-animated">
+      <div className="relative -mt-14 w-32 h-32 rounded-full overflow-hidden border-4 shadow-md border-animated">
         <CustomImage
           objectFit="cover"
           src={profileURL}
           alt="Profile Picture"
-          className="h-40 w-full object-cover rounded-full"
+          className="h-32 w-full object-cover rounded-full"
         />
       </div>
     </section>

@@ -11,12 +11,14 @@
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.5.1",
     "@mui/styled-engine-sc": "^6.4.2",
+    "framer-motion": "^12.6.3",
     "mongodb": "^6.13.0",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0",
-    "styled-components": "^6.1.14"
+    "react-icons": "^5.5.0",
+    "styled-components": "^6.1.14",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

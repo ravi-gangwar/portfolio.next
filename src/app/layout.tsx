@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Aldrich } from "next/font/google";
 import "./globals.css";
-
+import { AppProvider } from "@/context/AppContext";
 export const metadata: Metadata = {
-  title: "Ravi",
+  title: "Ravi Gangwar",
   description: "Ravi Gangwar Portfolio Website",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}
       >
-        {children}
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );

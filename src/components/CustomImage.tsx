@@ -6,6 +6,8 @@ type TCoverImage = {
   className?: string;
   objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
   priority?: boolean;
+  width?: number;
+  height?: number;
 };
 
 const CoverImage: React.FC<TCoverImage> = ({
@@ -13,9 +15,11 @@ const CoverImage: React.FC<TCoverImage> = ({
   alt,
   className = "",
   objectFit = "cover",
+  width,
+  height,
 }) => {
   return (
-    <div className={`${className} relative`}>
+    <div className={`${className} relative`} style={{ width, height }}>
       <Image
         src={src}
         alt={alt}
