@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 
 export default function ProjectLayout({
@@ -6,9 +7,10 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <Nav />
+    <>
+      <Header />
       {children}
-    </div>
+      <Nav />
+    </>
   );
 }

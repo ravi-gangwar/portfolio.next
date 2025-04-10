@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProjectGalleryProps = {
   screenshots: string[];
 };
@@ -11,11 +13,12 @@ const ProjectGallery = ({ screenshots }: ProjectGalleryProps) => (
       {screenshots.map((src, index) => (
         <div key={index} className="rounded-lg overflow-hidden shadow-lg group">
           <div className="aspect-video relative">
-            <img
+            <Image
               src={src}
               alt={`Project Screenshot ${index + 1}`}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         </div>

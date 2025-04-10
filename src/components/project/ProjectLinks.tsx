@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   FaGithub,
   FaYoutube,
@@ -67,11 +68,14 @@ const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
           className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-black hover:bg-gray-900 text-white rounded-md text-xs sm:text-sm transition-colors"
         >
           {appStoreIcons?.appStore ? (
-            <img
-              src={appStoreIcons.appStore}
-              alt="Download on the App Store"
-              className="h-5 sm:h-6"
-            />
+            <div className="relative h-5 sm:h-6 w-auto">
+              <Image
+                src={appStoreIcons.appStore}
+                alt="Download on the App Store"
+                fill
+                className="object-contain"
+              />
+            </div>
           ) : (
             <>
               <FaAppStore className="text-xs sm:text-sm" />
@@ -88,11 +92,14 @@ const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
           className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-green-600 hover:bg-green-700 text-white rounded-md text-xs sm:text-sm transition-colors"
         >
           {appStoreIcons?.playStore ? (
-            <img
-              src={appStoreIcons.playStore}
-              alt="Get it on Google Play"
-              className="h-5 sm:h-6"
-            />
+            <div className="relative h-5 sm:h-6 w-auto">
+              <Image
+                src={appStoreIcons.playStore}
+                alt="Get it on Google Play"
+                fill
+                className="object-contain"
+              />
+            </div>
           ) : (
             <>
               <FaGooglePlay className="text-xs sm:text-sm" />
