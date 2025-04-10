@@ -24,7 +24,12 @@ export default function RootLayout({
       <body
         className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}
       >
-        <AppProvider>{children}</AppProvider>
+        <div
+          className="w-full h-full lg:max-w-[40vw] bg-gradient-to-br from-gray-900 to-black p-4 rounded-lg shadow-lg 
+                        lg:border lg:border-zinc-700"
+        >
+          <AppProvider>{children}</AppProvider>
+        </div>
       </body>
     </html>
   );

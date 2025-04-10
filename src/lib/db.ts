@@ -28,6 +28,5 @@ export async function connectToDatabase() {
     return client.db(DATABASE_NAME);
   } catch (error) {
     console.error("❌ MongoDB Connection Error:", error);
-    throw new Error("MongoDB Connection Failed");
   }
 }
