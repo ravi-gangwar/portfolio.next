@@ -16,29 +16,17 @@ type HeroProps = {
   keywords: string[];
 };
 
-const MobileSlider = ({ images, name }: { images: string[]; name: string }) => (
-  <div className="relative w-full h-full">
-    <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-      {images.map((image, index) => (
-        <div key={index} className="flex-none w-full snap-center">
-          <CoverImage
-            src={image}
-            alt={`${name} - Slide ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
-    </div>
+const MobileHero = ({ image, name }: { image: string; name: string }) => (
+  <div className="w-full h-full">
+    <CoverImage
+      src={image}
+      alt={`${name} - Cover`}
+      className="w-full h-full object-cover"
+    />
   </div>
 );
 
-const DesktopSlider = ({
-  images,
-  name,
-}: {
-  images: string[];
-  name: string;
-}) => (
+const DesktopHero = ({ images, name }: { images: string[]; name: string }) => (
   <Swiper
     modules={[Navigation, Pagination, Autoplay]}
     navigation
@@ -89,9 +77,9 @@ const Hero = ({ name, tagline, coverImages, keywords }: HeroProps) => {
   return (
     <div className="relative w-full h-[200px] xs:h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] mb-4 sm:mb-6 md:mb-8 rounded-lg overflow-hidden">
       {isMobile ? (
-        <MobileSlider images={coverImages} name={name} />
+        <MobileHero image={coverImages[0]} name={name} />
       ) : (
-        <DesktopSlider images={coverImages} name={name} />
+        <DesktopHero images={coverImages} name={name} />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       <div className="absolute bottom-0 p-2 xs:p-3 sm:p-4 md:p-6 z-10 w-full">

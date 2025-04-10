@@ -1,6 +1,6 @@
-import React from 'react';
-import ProjectCard from './ProjectsCard';
-import { projectsData } from '@/constant/projects';
+import React from "react";
+import ProjectCard from "./ProjectsCard";
+import { projectsData } from "@/constant/projects";
 
 const Projects = () => {
   return (
@@ -12,6 +12,7 @@ const Projects = () => {
             {category.projects.map((project, idx) => (
               <ProjectCard
                 key={idx}
+                id={project.id}
                 appleStoreLink={project.appleStoreLink}
                 playStoreLink={project.playStoreLink}
                 githubLink={project.githubLink}

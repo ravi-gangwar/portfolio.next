@@ -8,6 +8,7 @@ interface ProjectCardProps {
   image: string;
   name: string;
   liveLink?: string;
+  id: string;
   githubLink?: string;
   appleStoreLink?: string;
   playStoreLink?: string;
@@ -18,21 +19,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   liveLink,
   githubLink,
+  id,
   appleStoreLink,
   playStoreLink,
 }) => {
   const router = useRouter();
-  const handleCardClick = (
-    e: React.MouseEvent<HTMLDivElement>,
-    name: string
-  ) => {
-    router.push(`/p/${name}`);
+  const handleCardClick = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
+    router.push(`/p/${id}`);
   };
 
   return (
     <div
       className="relative rounded-xl p-4 shadow-lg w-full backdrop-blur-lg border border-zinc-700 cursor-pointer"
-      onClick={(e) => handleCardClick(e, name)}
+      onClick={(e) => handleCardClick(e, id)}
     >
       <div className="relative w-full h-28 overflow-hidden rounded-md">
         <CoverImage
