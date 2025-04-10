@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { AiFillHome } from "react-icons/ai";
 import { IoMdMenu } from "react-icons/io";
@@ -10,13 +10,15 @@ import { useRouter } from "next/navigation";
 const Nav = () => {
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(true);
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setIsVisible(currentScrollY < lastScrollY || currentScrollY === 0);
-      lastScrollY = currentScrollY;
+      setIsVisible(
+        currentScrollY < lastScrollY.current || currentScrollY === 0
+      );
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);

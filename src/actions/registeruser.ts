@@ -5,6 +5,9 @@ import { connectToDatabase } from "@/lib/db";
 export async function registerUser(fingerprint: string, ipv4: string, ipv6: string) {
   try {
     const db = await connectToDatabase();
+    if (!db) {
+      throw new Error("Failed to connect to database");
+    }
     const collection = db.collection("portfolio");
 
     // Check if user already exists

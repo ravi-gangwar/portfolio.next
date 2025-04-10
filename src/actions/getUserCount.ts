@@ -5,6 +5,9 @@ import { connectToDatabase } from "@/lib/db";
 export async function getUserCount() {
   try {
     const db = await connectToDatabase();
+    if (!db) {
+      throw new Error("Failed to connect to database");
+    }
     const collection = db.collection("portfolio");
 
     // Get total user count
