@@ -1,5 +1,323 @@
 export const projectData = [
   {
+    id: "guidex",
+    name: "GuideX",
+    tagline: "Chrome Extension for Browser Automation and Navigation",
+    coverImages: [
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "React.js",
+      "JavaScript",
+      "Chrome Extension API",
+      "HTML/CSS",
+      "Chrome Storage API",
+      "Manifest V3"
+    ],
+    description: `GuideX is a powerful Chrome extension designed to enhance browser navigation and automate repetitive tasks. Built with React.js and the Chrome Extension API, this tool helps users streamline their browsing experience and increase productivity.
+
+The extension features customizable navigation shortcuts, action automation, and a user-friendly interface for managing browser interactions. It leverages the latest Chrome Extension technologies including Manifest V3 for improved security and performance.`,
+    features: [
+      {
+        title: "Custom Navigation Shortcuts",
+        description: "Create and manage personalized keyboard shortcuts for quick navigation",
+        icon: "⌨️"
+      },
+      {
+        title: "Action Automation",
+        description: "Record and replay browser actions to automate repetitive tasks",
+        icon: "🤖"
+      },
+      {
+        title: "Smart Bookmarks",
+        description: "Organize and access bookmarks with intelligent categorization",
+        icon: "🔖"
+      },
+      {
+        title: "Tab Management",
+        description: "Efficiently organize and switch between browser tabs",
+        icon: "📑"
+      },
+      {
+        title: "User Scripts",
+        description: "Create and run custom scripts to enhance website functionality",
+        icon: "📜"
+      },
+      {
+        title: "Cross-Device Sync",
+        description: "Synchronize settings and shortcuts across devices",
+        icon: "🔄"
+      }
+    ],
+    keyAchievements: [
+      "Achieved 4.8/5 rating on Chrome Web Store",
+      "Reached 10,000+ active users within 3 months",
+      "Featured in Chrome Extension Showcase",
+      "Reduced user navigation time by 40% on average"
+    ],
+    technicalHighlights: [
+      "Implemented Manifest V3 for enhanced security and performance",
+      "Built responsive UI with React.js and modern CSS",
+      "Integrated Chrome Storage API for data persistence",
+      "Developed efficient action recording and replay system",
+      "Created cross-browser compatibility layer"
+    ],
+    links: {
+      live: "https://chrome.google.com/webstore/detail/guidex",
+      github: "https://github.com/yourrepo/guidex",
+      youtube: "https://youtube.com/your-demo-video"
+    },
+    keywords: ["chrome extension", "browser automation", "productivity", "navigation", "react"]
+  },
+  {
+    id: "greenearth1",
+    name: "GreenEarth v1",
+    tagline: "MERN Stack Implementation of Sustainable Living Platform",
+    coverImages: [
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "JWT Authentication",
+      "Redux",
+      "Material UI",
+      "RESTful API"
+    ],
+    description: `GreenEarth v1 is the initial implementation of our sustainable living platform, built using the MERN stack. This version established the core functionality and user experience that would later be enhanced in GreenEarth v2.
+
+The platform features an eco-friendly marketplace, carbon footprint tracking, and educational resources about sustainable living. Built with MongoDB, Express.js, React.js, and Node.js, this version delivered a solid foundation for promoting environmental consciousness.`,
+    features: [
+      {
+        title: "Eco-friendly Marketplace",
+        description: "Browse and purchase sustainable products from verified vendors",
+        icon: "🌿"
+      },
+      {
+        title: "Carbon Footprint Tracker",
+        description: "Monitor and visualize your environmental impact",
+        icon: "📊"
+      },
+      {
+        title: "Sustainability Education",
+        description: "Access comprehensive resources for green living",
+        icon: "📚"
+      },
+      {
+        title: "Community Platform",
+        description: "Connect with like-minded individuals and share practices",
+        icon: "👥"
+      },
+      {
+        title: "Impact Analytics",
+        description: "Track your environmental contributions over time",
+        icon: "📈"
+      },
+      {
+        title: "Green Business Directory",
+        description: "Discover sustainable businesses in your area",
+        icon: "🏢"
+      }
+    ],
+    keyAchievements: [
+      "Launched successfully with 500+ registered users in first month",
+      "Featured in Environmental Technology Monthly",
+      "Achieved 85% user satisfaction rating",
+      "Processed 1000+ eco-friendly product transactions"
+    ],
+    technicalHighlights: [
+      "Built RESTful API with Express.js and MongoDB",
+      "Implemented JWT authentication for secure user access",
+      "Created responsive UI with Material UI components",
+      "Developed state management with Redux",
+      "Integrated payment processing for marketplace transactions"
+    ],
+    links: {
+      live: "https://greenearth-v1.com",
+      github: "https://github.com/yourrepo/greenearth-v1",
+      youtube: "https://youtube.com/your-demo-video"
+    },
+    keywords: ["mern stack", "sustainability", "eco-friendly", "carbon footprint", "marketplace"]
+  },
+  {
+    id: "wyvate-customer-web",
+    name: "Wyvate Customer Web",
+    tagline: "Comprehensive Customer Management Platform",
+    coverImages: [
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "tRPC",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth.js",
+      "React Query"
+    ],
+    description: `Wyvate Customer Web is a comprehensive customer management platform designed to streamline business operations and enhance customer relationships. Built with Next.js and TypeScript, this web application provides powerful tools for customer data management, communication, and analytics.
+
+The platform features a modern, responsive interface with robust security measures and seamless integration capabilities. It leverages tRPC for type-safe API communication and Prisma for efficient database operations, delivering a high-performance solution for businesses of all sizes.`,
+    features: [
+      {
+        title: "Customer Profile Management",
+        description: "Comprehensive customer data storage and organization",
+        icon: "👤"
+      },
+      {
+        title: "Communication Hub",
+        description: "Integrated messaging and notification system",
+        icon: "💬"
+      },
+      {
+        title: "Analytics Dashboard",
+        description: "Real-time insights and reporting tools",
+        icon: "📊"
+      },
+      {
+        title: "Task Management",
+        description: "Create and track customer-related tasks",
+        icon: "✅"
+      },
+      {
+        title: "Document Management",
+        description: "Secure storage and sharing of customer documents",
+        icon: "📄"
+      },
+      {
+        title: "Integration Capabilities",
+        description: "Connect with other business tools and services",
+        icon: "🔌"
+      }
+    ],
+    keyAchievements: [
+      "Reduced customer management time by 35% for clients",
+      "Achieved 99.9% uptime in production environment",
+      "Processed over 1 million customer interactions",
+      "Implemented role-based access control for enhanced security"
+    ],
+    technicalHighlights: [
+      "Built with Next.js and TypeScript for type safety and performance",
+      "Implemented tRPC for end-to-end type-safe API communication",
+      "Created responsive UI with Tailwind CSS",
+      "Developed efficient database schema with Prisma",
+      "Integrated NextAuth.js for secure authentication"
+    ],
+    links: {
+      live: "https://customer.wyvate.com",
+      github: "https://github.com/yourrepo/wyvate-customer-web",
+      youtube: "https://youtube.com/your-demo-video"
+    },
+    keywords: ["customer management", "next.js", "trpc", "analytics", "business platform"]
+  },
+  {
+    id: "wyvate-customer-app",
+    name: "Wyvate Customer App",
+    tagline: "Mobile Customer Management Solution",
+    coverImages: [
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "React Native",
+      "TypeScript",
+      "Redux Toolkit",
+      "React Navigation",
+      "tRPC Client",
+      "AsyncStorage",
+      "Push Notifications",
+      "Offline Support"
+    ],
+    description: `Wyvate Customer App is a powerful mobile solution that extends the functionality of the Wyvate Customer Web platform to iOS and Android devices. Built with React Native and TypeScript, this app provides on-the-go access to customer management tools and real-time updates.
+
+The application features a native user experience with offline capabilities, push notifications, and seamless synchronization with the web platform. It leverages tRPC for type-safe API communication and Redux Toolkit for efficient state management, delivering a robust mobile solution for businesses.`,
+    features: [
+      {
+        title: "Mobile Customer Profiles",
+        description: "Access and update customer information on the go",
+        icon: "📱"
+      },
+      {
+        title: "Real-time Notifications",
+        description: "Receive instant updates about customer activities",
+        icon: "🔔"
+      },
+      {
+        title: "Offline Mode",
+        description: "Work with customer data even without internet connection",
+        icon: "📶"
+      },
+      {
+        title: "Quick Actions",
+        description: "Perform common tasks with minimal taps",
+        icon: "⚡"
+      },
+      {
+        title: "Document Scanner",
+        description: "Scan and upload customer documents directly from your device",
+        icon: "📷"
+      },
+      {
+        title: "Location Services",
+        description: "Track customer visits and optimize travel routes",
+        icon: "📍"
+      }
+    ],
+    keyAchievements: [
+      "Achieved 4.7/5 rating on both App Store and Google Play",
+      "Reduced field service response time by 25%",
+      "Implemented offline-first architecture for reliable performance",
+      "Supported 10,000+ daily active users"
+    ],
+    technicalHighlights: [
+      "Built cross-platform app with React Native and TypeScript",
+      "Implemented offline data synchronization with AsyncStorage",
+      "Created intuitive navigation with React Navigation",
+      "Integrated push notifications for real-time updates",
+      "Developed efficient state management with Redux Toolkit"
+    ],
+    links: {
+      youtube: "https://youtube.com/your-demo-video",
+      appStore: "https://apps.apple.com/app/wyvate-customer",
+      playStore: "https://play.google.com/store/apps/details?id=com.wyvate.customer"
+    },
+    appStoreIcons: {
+      appStore: "https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg",
+      playStore: "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    },
+    keywords: ["react native", "mobile app", "customer management", "offline support", "cross-platform"]
+  },
+  {
     id: "greenearth2",
     name: "GreenEarth",
     tagline: "Empowering Sustainable Living Through Technology",

@@ -1,43 +1,108 @@
-import { FaGithub, FaYoutube, FaGlobe } from "react-icons/fa";
+import React from "react";
+import {
+  FaGithub,
+  FaYoutube,
+  FaExternalLinkAlt,
+  FaAppStore,
+  FaGooglePlay,
+} from "react-icons/fa";
 
 type ProjectLinksProps = {
   links: {
-    live: string;
-    youtube: string;
-    github: string;
+    live?: string;
+    github?: string;
+    youtube?: string;
+    appStore?: string;
+    playStore?: string;
+  };
+  appStoreIcons?: {
+    appStore?: string;
+    playStore?: string;
   };
 };
 
-const ProjectLinks = ({ links }: ProjectLinksProps) => (
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-4 sm:mb-6 md:mb-8">
-    <a
-      href={links.live}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center justify-center gap-2 px-3 py-2 sm:px-4 sm:py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg text-white font-semibold transition-colors text-sm sm:text-base"
-    >
-      <FaGlobe className="text-base sm:text-lg md:text-xl" />
-      <span>Live Demo</span>
-    </a>
-    <a
-      href={links.youtube}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center justify-center gap-2 px-3 py-2 sm:px-4 sm:py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white font-semibold transition-colors text-sm sm:text-base"
-    >
-      <FaYoutube className="text-base sm:text-lg md:text-xl" />
-      <span>Watch Demo</span>
-    </a>
-    <a
-      href={links.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center justify-center gap-2 px-3 py-2 sm:px-4 sm:py-3 bg-gray-700 hover:bg-gray-600 rounded-lg text-white font-semibold transition-colors text-sm sm:text-base"
-    >
-      <FaGithub className="text-base sm:text-lg md:text-xl" />
-      <span>Source Code</span>
-    </a>
-  </div>
-);
+const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
+  const { live, github, youtube, appStore, playStore } = links;
+
+  return (
+    <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
+      {live && (
+        <a
+          href={live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-xs sm:text-sm transition-colors"
+        >
+          <FaExternalLinkAlt className="text-xs sm:text-sm" />
+          <span>Live Demo</span>
+        </a>
+      )}
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-gray-800 hover:bg-gray-900 text-white rounded-md text-xs sm:text-sm transition-colors"
+        >
+          <FaGithub className="text-xs sm:text-sm" />
+          <span>GitHub</span>
+        </a>
+      )}
+      {youtube && (
+        <a
+          href={youtube}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-md text-xs sm:text-sm transition-colors"
+        >
+          <FaYoutube className="text-xs sm:text-sm" />
+          <span>YouTube</span>
+        </a>
+      )}
+      {appStore && (
+        <a
+          href={appStore}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-black hover:bg-gray-900 text-white rounded-md text-xs sm:text-sm transition-colors"
+        >
+          {appStoreIcons?.appStore ? (
+            <img
+              src={appStoreIcons.appStore}
+              alt="Download on the App Store"
+              className="h-5 sm:h-6"
+            />
+          ) : (
+            <>
+              <FaAppStore className="text-xs sm:text-sm" />
+              <span>App Store</span>
+            </>
+          )}
+        </a>
+      )}
+      {playStore && (
+        <a
+          href={playStore}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-green-600 hover:bg-green-700 text-white rounded-md text-xs sm:text-sm transition-colors"
+        >
+          {appStoreIcons?.playStore ? (
+            <img
+              src={appStoreIcons.playStore}
+              alt="Get it on Google Play"
+              className="h-5 sm:h-6"
+            />
+          ) : (
+            <>
+              <FaGooglePlay className="text-xs sm:text-sm" />
+              <span>Play Store</span>
+            </>
+          )}
+        </a>
+      )}
+    </div>
+  );
+};
 
 export default ProjectLinks;

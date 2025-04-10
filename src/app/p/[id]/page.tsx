@@ -31,7 +31,10 @@ const ProjectDetails = () => {
           coverImages={project.coverImages}
           keywords={project.keywords}
         />
-        <ProjectLinks links={project.links} />
+        <ProjectLinks
+          links={project.links}
+          appStoreIcons={project.appStoreIcons}
+        />
         <TechStack technologies={project.techStack} />
         {/* Description */}
         <div className="mb-4 sm:mb-6 md:mb-8">
