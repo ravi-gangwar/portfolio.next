@@ -7,8 +7,8 @@ import {
   FaTools,
   FaEnvelope,
 } from "react-icons/fa";
-import { useRouter } from "next/navigation"; // Importing useRouter for programmatic navigation
-import { motion } from "framer-motion"; // Importing motion from framer-motion for animations
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const MenuModal = () => {
   const ctx = useAppContext();
