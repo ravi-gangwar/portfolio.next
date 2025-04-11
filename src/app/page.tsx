@@ -1,6 +1,4 @@
 import Header from "@/components/Header";
-import MenuModal from "@/components/MenuModal";
-import Nav from "@/components/Nav";
 import HomeScreen from "@/screens/Home";
 import Head from "next/head";
 
@@ -15,8 +13,6 @@ export default function Home() {
         <main className="pt-2 flex-1">
           <HomeScreen />
         </main>
-        <Nav />
-        <MenuModal />
       </div>
     </div>
   );

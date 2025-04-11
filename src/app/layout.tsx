@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Aldrich } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
+import MenuModal from "@/components/MenuModal";
+import Nav from "@/components/Nav";
 export const metadata: Metadata = {
   title: "Ravi Gangwar",
   description: "Ravi Gangwar Portfolio Website",
@@ -45,7 +47,11 @@ export default function RootLayout({
           className="w-full h-full lg:max-w-[40vw] bg-gradient-to-br from-gray-900 to-black p-4 rounded-lg shadow-lg 
                         lg:border lg:border-zinc-700"
         >
-          <AppProvider>{children}</AppProvider>
+          <AppProvider>
+            {children}
+            <Nav />
+            <MenuModal />
+          </AppProvider>
         </div>
       </body>
     </html>

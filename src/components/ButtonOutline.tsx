@@ -1,7 +1,7 @@
 "use client";
 import { mymail } from "@/constant/other";
 import React from "react";
-import { HiMail } from "react-icons/hi"; // Import mail icon
+import { HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 type ButtonOutlineProps = {
