@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub, FaApple, FaGooglePlay } from "react-icons/fa";
 import { FaEarthAsia } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 import CoverImage from "./CustomImage";
+import LoadingOverlay from "./LoadingOverlay";
 import { useRouter } from "next/navigation";
+
 interface ProjectCardProps {
   image: string;
   name: string;
@@ -24,12 +27,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   playStoreLink,
 }) => {
   const router = useRouter();
-  const handleCardClick = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
-    router.push(`/p/${id}`);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleCardClick = async (
+    e: React.MouseEvent<HTMLDivElement>,
+    id: string
+  ) => {
+    if (e.target instanceof HTMLElement && e.target.closest("a")) return;
+
+    setIsLoading(true);
+    try {
+      await router.push(`/p/${id}`);
+    } catch (error) {
+      console.error("Navigation error:", error);
+      setIsLoading(false);
+    }
   };
 
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       className="relative rounded-xl p-4 shadow-lg w-full backdrop-blur-lg border border-zinc-700 cursor-pointer"
       onClick={(e) => handleCardClick(e, id)}
     >
@@ -89,7 +107,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
         )}
       </div>
-    </div>
+
+      <LoadingOverlay isVisible={isLoading} />
+    </motion.div>
   );
 };
 
