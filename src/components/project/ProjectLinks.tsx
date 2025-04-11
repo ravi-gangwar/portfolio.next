@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   FaGithub,
   FaYoutube,
@@ -22,7 +21,7 @@ type ProjectLinksProps = {
   };
 };
 
-const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
+const ProjectLinks = ({ links }: ProjectLinksProps) => {
   const { live, github, youtube, appStore, playStore } = links;
 
   return (
@@ -67,21 +66,8 @@ const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
           rel="noopener noreferrer"
           className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-black hover:bg-gray-900 text-white rounded-md text-xs sm:text-sm transition-colors"
         >
-          {appStoreIcons?.appStore ? (
-            <div className="relative h-5 sm:h-6 w-auto">
-              <Image
-                src={appStoreIcons.appStore}
-                alt="Download on the App Store"
-                fill
-                className="object-contain"
-              />
-            </div>
-          ) : (
-            <>
-              <FaAppStore className="text-xs sm:text-sm" />
-              <span>App Store</span>
-            </>
-          )}
+          <FaAppStore className="text-xs sm:text-sm" />
+          <span>App Store</span>
         </a>
       )}
       {playStore && (
@@ -91,21 +77,8 @@ const ProjectLinks = ({ links, appStoreIcons }: ProjectLinksProps) => {
           rel="noopener noreferrer"
           className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-green-600 hover:bg-green-700 text-white rounded-md text-xs sm:text-sm transition-colors"
         >
-          {appStoreIcons?.playStore ? (
-            <div className="relative h-5 sm:h-6 w-auto">
-              <Image
-                src={appStoreIcons.playStore}
-                alt="Get it on Google Play"
-                fill
-                className="object-contain"
-              />
-            </div>
-          ) : (
-            <>
-              <FaGooglePlay className="text-xs sm:text-sm" />
-              <span>Play Store</span>
-            </>
-          )}
+          <FaGooglePlay className="text-xs sm:text-sm" />
+          <span>Play Store</span>
         </a>
       )}
     </div>

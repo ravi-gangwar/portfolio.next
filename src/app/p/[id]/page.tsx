@@ -29,10 +29,7 @@ const ProjectDetails = () => {
         coverImages={project.coverImages}
         keywords={project.keywords}
       />
-      <ProjectLinks
-        links={project.links}
-        appStoreIcons={project.appStoreIcons}
-      />
+      <ProjectLinks links={project.links} />
       <TechStack technologies={project.techStack} />
       {/* Description */}
       <div className="mb-4 sm:mb-6 md:mb-8">
@@ -50,7 +47,7 @@ const ProjectDetails = () => {
           ))}
         </div>
       </div>
-      Key Features
+      {/* Key Features */}
       <div className="mb-4 sm:mb-6 md:mb-8">
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">
           Key Features

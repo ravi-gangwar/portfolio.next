@@ -308,8 +308,8 @@ The application features a native user experience with offline capabilities, pus
     ],
     links: {
       youtube: "https://youtube.com/your-demo-video",
-      appStore: "https://apps.apple.com/app/wyvate-customer",
-      playStore: "https://play.google.com/store/apps/details?id=com.wyvate.customer"
+      appStore: "https://apps.apple.com/in/app/wyvate/id6740251470",
+      playStore: "https://play.google.com/store/apps/details?id=com.wyvate_native&pcampaignid=web_share"
     },
     appStoreIcons: {
       appStore: "https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg",
