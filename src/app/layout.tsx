@@ -19,6 +19,23 @@ export default function RootLayout({
     <html lang="en">
       <header>
         <meta name="theme-color" content="#0F172A" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="description" content="Ravi Gangwar Portfolio Website" />
+        <meta name="author" content="Ravi Gangwar" />
+        <meta
+          name="keywords"
+          content="Ravi Gangwar, Ravi Gangwar Portfolio, Ravi Gangwar Website, Ravi Gangwar Portfolio Website, Ravi Gangwar Resume, Ravi Gangwar Resume Download, Ravi Gangwar Resume PDF, Ravi Gangwar Resume Download PDF, Ravi Gangwar PSIT, Ravi Gangwar Pranveer singh institute of technology kanpur"
+        />
+        <meta property="og:title" content="Ravi Gangwar Portfolio Website" />
+        <meta
+          property="og:description"
+          content="Ravi Gangwar Portfolio Website"
+        />
+        <meta property="og:image" content="/opengraph-image.png" />
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </header>
       <body
