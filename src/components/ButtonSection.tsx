@@ -1,7 +1,6 @@
 import React from "react";
 import ButtonOutline from "./ButtonOutline";
 import ButtonConnect from "./Button";
-import ButtonResume from "./ButtonResume";
 
 const ButtonSection = () => {
   return (
@@ -11,7 +10,6 @@ const ButtonSection = () => {
         title="Connect"
       />
       <ButtonOutline title="Mail" />
-      <ButtonResume />
     </div>
   );
 };
