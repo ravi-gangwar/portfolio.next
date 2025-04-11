@@ -11,6 +11,8 @@
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.5.1",
     "@mui/styled-engine-sc": "^6.4.2",
+    "@next/third-parties": "^15.3.0",
+    "firebase": "^11.6.0",
     "framer-motion": "^12.6.3",
     "gsap": "^3.12.7",
     "mongodb": "^6.13.0",

@@ -4,9 +4,12 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import MenuModal from "@/components/MenuModal";
 import Nav from "@/components/Nav";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 export const metadata: Metadata = {
   title: "Ravi Gangwar",
   description: "Ravi Gangwar Portfolio Website",
+  metadataBase: new URL("https://ravigangwar.vercel.app"),
 };
 
 const aldrich = Aldrich({
@@ -54,6 +57,7 @@ export default function RootLayout({
           </AppProvider>
         </div>
       </body>
+      <GoogleAnalytics gaId={process.env.GA_ID || ""} />
     </html>
   );
 }
