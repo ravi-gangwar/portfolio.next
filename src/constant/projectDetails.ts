@@ -81,7 +81,7 @@ The extension features customizable navigation shortcuts, action automation, and
     name: "GreenEarth v1",
     tagline: "MERN Stack Implementation of Sustainable Living Platform",
     coverImages: [
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747929430/xocnlxyr5btjpqtxxhon.png",
       "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],
@@ -149,8 +149,8 @@ The platform features an eco-friendly marketplace, carbon footprint tracking, an
       "Integrated payment processing for marketplace transactions"
     ],
     links: {
-      live: "https://greenearth-v1.com",
-      github: "https://github.com/yourrepo/greenearth-v1",
+      live: "https://greenearth1.vercel.app/",
+      github: "https://github.com/ravi-gangwar/greenearth",
       youtube: "https://youtube.com/your-demo-video"
     },
     keywords: ["mern stack", "sustainability", "eco-friendly", "carbon footprint", "marketplace"]
@@ -160,7 +160,7 @@ The platform features an eco-friendly marketplace, carbon footprint tracking, an
     name: "Wyvate Customer Web",
     tagline: "Comprehensive Customer Management Platform",
     coverImages: [
-      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747929585/xubbwd7tolyfbcfn2nwe.png",
       "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],
@@ -229,7 +229,7 @@ The platform features a modern, responsive interface with robust security measur
     ],
     links: {
       live: "https://customer.wyvate.com",
-      github: "https://github.com/yourrepo/wyvate-customer-web",
+      // github: "https://github.com/yourrepo/wyvate-customer-web",
       youtube: "https://youtube.com/your-demo-video"
     },
     keywords: ["customer management", "next.js", "trpc", "analytics", "business platform"]
@@ -322,14 +322,14 @@ The application features a native user experience with offline capabilities, pus
     name: "GreenEarth",
     tagline: "Empowering Sustainable Living Through Technology",
     coverImages: [
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747928313/g2lp.png",
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747928647/uwfgpwqxjzg6khkk6bg0.png",
+      "https://res.cloudinary.com/ravigangwar/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1747928313/g2lp.png"
     ],
     screenshots: [
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747928313/g2lp.png",
+      "https://res.cloudinary.com/ravigangwar/image/upload/v1747928647/uwfgpwqxjzg6khkk6bg0.png",
+      "https://res.cloudinary.com/ravigangwar/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1747928313/g2lp.png"
     ],
     techStack: [
       "Next.js",
@@ -388,9 +388,9 @@ The platform features an intuitive marketplace for eco-friendly products, real-t
       "Implemented user authentication and profile management",
     ],
     links: {
-      live: "https://greenearth.com",
-      github: "https://github.com/yourrepo",
-      youtube: "https://youtube.com/your-demo-video"
+      live: "https://greenearth2.vercel.app/",
+      github: "https://github.com/ravi-gangwar/greenEarth2.0",
+      // youtube: "https://youtube.com/your-demo-video"
     },
     keywords: ["sustainability", "eco-friendly", "carbon footprint", "green technology"]
   },
