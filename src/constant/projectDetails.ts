@@ -1,3 +1,4 @@
+const youtubeChannel = "https://www.youtube.com/@ravi-gangwar"
 export const projectData = [
   {
     id: "guidex",
@@ -228,9 +229,8 @@ The platform features a modern, responsive interface with robust security measur
       "Integrated NextAuth.js for secure authentication"
     ],
     links: {
-      live: "https://customer.wyvate.com",
-      // github: "https://github.com/yourrepo/wyvate-customer-web",
-      youtube: "https://youtube.com/your-demo-video"
+      live: "https://app.wyvate.com",
+      youtube: youtubeChannel
     },
     keywords: ["customer management", "next.js", "trpc", "analytics", "business platform"]
   },
@@ -307,9 +307,9 @@ The application features a native user experience with offline capabilities, pus
       "Developed efficient state management with Redux Toolkit"
     ],
     links: {
-      youtube: "https://youtube.com/your-demo-video",
       appStore: "https://apps.apple.com/in/app/wyvate/id6740251470",
-      playStore: "https://play.google.com/store/apps/details?id=com.wyvate_native&pcampaignid=web_share"
+      playStore: "https://play.google.com/store/apps/details?id=com.wyvate_native&pcampaignid=web_share",
+      youtube: youtubeChannel,
     },
     appStoreIcons: {
       appStore: "https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg",
@@ -390,7 +390,7 @@ The platform features an intuitive marketplace for eco-friendly products, real-t
     links: {
       live: "https://greenearth2.vercel.app/",
       github: "https://github.com/ravi-gangwar/greenEarth2.0",
-      // youtube: "https://youtube.com/your-demo-video"
+      youtube: youtubeChannel
     },
     keywords: ["sustainability", "eco-friendly", "carbon footprint", "green technology"]
   },
@@ -470,7 +470,7 @@ The platform features a user-friendly interface with a powerful code editor, sup
     links: {
       live: "https://codeeditor.com",
       github: "https://github.com/yourrepo/code-editor",
-      youtube: "https://youtube.com/your-demo-video"
+      youtube: youtubeChannel
     },
     keywords: ["code execution", "sandbox", "programming", "security", "monaco editor"]
   }

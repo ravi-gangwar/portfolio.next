@@ -1,4 +1,3 @@
-
 type Project = {
   githubLink?: string;
   liveLink?: string;
@@ -16,7 +15,25 @@ type ProjectsCategory = {
 
 export const projectsData: ProjectsCategory[] = [
   {
-    title: 'Personal Projects',
+    title: 'Featured Production Projects (Built from Scratch)',
+    projects: [
+      {
+        appleStoreLink: 'https://apps.apple.com/in/app/wyvate/id6740251470',
+        playStoreLink: 'https://play.google.com/store/apps/details?id=com.wyvate_native&pcampaignid=web_share',
+        image: '/wyvate.png',
+        name: 'Wyvate Customer App (Android & iOS)',
+        id: 'wyvate-customer-app',
+      },
+      {
+        liveLink: 'https://app.wyvate.com',
+        image: '/wyvate.png',
+        name: 'Wyvte Customer Web',
+        id: 'wyvate-customer-web',
+      },
+    ],
+  },
+  {
+    title: 'Personal Projects (Built for learning)',
     projects: [
       {
         githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
@@ -49,23 +66,5 @@ export const projectsData: ProjectsCategory[] = [
         id: 'guidex',
       },
     ],
-  },
-  {
-    title: 'Internship Projects',
-    projects: [
-      {
-        liveLink: 'https://app.wyvate.com/',
-        image: '/wyvate.png',
-        name: 'Wyvte Customer Web',
-        id: 'wyvate-customer-web',
-      },
-      {
-        appleStoreLink: 'https://apps.apple.com/in/app/wyvate/id6740251470',
-        playStoreLink: 'https://play.google.com/store/apps/details?id=com.wyvate_native&pcampaignid=web_share',
-        image: '/wyvate.png',
-        name: 'Wyvate Customer App (Android & iOS)',
-        id: 'wyvate-customer-app',
-      },
-    ],
-  },
+  }
 ];

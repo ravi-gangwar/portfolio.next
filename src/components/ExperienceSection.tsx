@@ -1,5 +1,6 @@
 import { TExperience, experiences } from "@/constant/experience";
 import React from "react";
+import KeywordHighlight from "@/components/KeywordHighlight";
 
 const ExperienceSection: React.FC<TExperience> = ({
   companyName,
@@ -41,7 +42,9 @@ const ExperienceSection: React.FC<TExperience> = ({
           {achievements.map((achievement, index) => (
             <li key={index} className="flex items-center">
               <span className="text-blue-500 mr-3">•</span>
-              <p className="text-gray-300 text-left text-sm">{achievement}</p>
+              <p className="text-gray-300 text-left text-sm">
+                <KeywordHighlight text={achievement} keywords={skills} />
+              </p>
             </li>
           ))}
         </ul>

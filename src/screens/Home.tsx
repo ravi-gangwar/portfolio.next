@@ -10,7 +10,6 @@ const HomeScreen = () => {
     <div className="min-h-screen">
       <Profile />
       <ButtonSection />
-      {/* <AudioPlayer /> */}
       <Suspense>
         <Tabs />
       </Suspense>
