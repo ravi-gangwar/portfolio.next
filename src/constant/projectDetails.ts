@@ -478,8 +478,8 @@ The platform features a user-friendly interface with a powerful code editor, sup
       "Built RESTful API for code execution and retrieval"
     ],
     links: {
-      live: "https://codeeditor.com",
-      github: "https://github.com/yourrepo/code-editor",
+      live: "https://codeeditor.ravigangwar.cv",
+      github: "https://github.com/ravi-gangwar/code-editor-frontend",
       youtube: youtubeChannel
     },
     keywords: ["code execution", "sandbox", "programming", "security", "monaco editor"]

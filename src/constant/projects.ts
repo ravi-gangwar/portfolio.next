@@ -37,14 +37,14 @@ export const projectsData: ProjectsCategory[] = [
     projects: [
       {
         githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
-        liveLink: 'https://greenearth2.vercel.app/',
+        liveLink: 'https://greenearth.ravigangwar.cv',
         image: 'https://greenearth2.vercel.app/greenearth.svg',
         name: 'greenEarth 2.0',
         id: 'greenearth2',
       },
       {
         githubLink: 'https://github.com/ravi-gangwar/greenEarth',
-        liveLink: 'https://greenearth1.vercel.app/',
+        liveLink: 'https://greenearth1.ravigangwar.cv',
         image: 'https://greenearth2.vercel.app/greenearth.svg',
         name: 'greenEarth 1.0',
         id: 'greenearth1',
@@ -52,8 +52,8 @@ export const projectsData: ProjectsCategory[] = [
       {
         appleStoreLink: '',
         playStoreLink: '',
-        liveLink: 'https://codebox-editor.vercel.app/',
-        githubLink: 'https://github.com/ravi-gangwar/code-editor-backend.git',
+        liveLink: 'https://code.ravigangwar.cv',
+        githubLink: 'https://github.com/ravi-gangwar/code-editor-frontend',
         image: 'https://i.pinimg.com/736x/09/9c/92/099c92bf55b68a6a6b1e1f79aeaf1377.jpg',
         name: 'Code Editor',
         id: 'codeeditor',
