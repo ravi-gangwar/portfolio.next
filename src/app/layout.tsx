@@ -43,6 +43,7 @@ export default function RootLayout({
         <meta property="og:image" content="/opengraph-image.jpeg" />
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </header>
       <body
         className={`flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0F172A] to-black ${aldrich.className}`}
