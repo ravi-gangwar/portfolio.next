@@ -58,22 +58,16 @@ The extension features customizable navigation shortcuts, action automation, and
       }
     ],
     keyAchievements: [
-      "Achieved 4.8/5 rating on Chrome Web Store",
-      "Reached 10,000+ active users within 3 months",
-      "Featured in Chrome Extension Showcase",
-      "Reduced user navigation time by 40% on average"
     ],
     technicalHighlights: [
       "Implemented Manifest V3 for enhanced security and performance",
       "Built responsive UI with React.js and modern CSS",
       "Integrated Chrome Storage API for data persistence",
-      "Developed efficient action recording and replay system",
-      "Created cross-browser compatibility layer"
     ],
     links: {
       live: "https://chrome.google.com/webstore/detail/guidex",
-      github: "https://github.com/yourrepo/guidex",
-      youtube: "https://youtube.com/your-demo-video"
+      github: "https://github.com/ravi-gangwar/guidex",
+      youtube: youtubeChannel
     },
     keywords: ["chrome extension", "browser automation", "productivity", "navigation", "react"]
   },
@@ -137,22 +131,19 @@ The platform features an eco-friendly marketplace, carbon footprint tracking, an
       }
     ],
     keyAchievements: [
-      "Launched successfully with 500+ registered users in first month",
-      "Featured in Environmental Technology Monthly",
-      "Achieved 85% user satisfaction rating",
-      "Processed 1000+ eco-friendly product transactions"
     ],
     technicalHighlights: [
       "Built RESTful API with Express.js and MongoDB",
       "Implemented JWT authentication for secure user access",
       "Created responsive UI with Material UI components",
-      "Developed state management with Redux",
-      "Integrated payment processing for marketplace transactions"
+      "Integrated payment gateway stripe",
+      "Implemented Redux for state management"
+
     ],
     links: {
-      live: "https://greenearth1.vercel.app/",
-      github: "https://github.com/ravi-gangwar/greenearth",
-      youtube: "https://youtube.com/your-demo-video"
+      live: "https://greenearth1.ravigangwar.cv/",
+      github: "https://github.com/ravi-gangwar/greenEarth",
+      youtube: youtubeChannel
     },
     keywords: ["mern stack", "sustainability", "eco-friendly", "carbon footprint", "marketplace"]
   },
@@ -217,16 +208,15 @@ The platform features a modern, responsive interface with robust security measur
     ],
     keyAchievements: [
       "Reduced customer management time by 35% for clients",
-      "Achieved 99.9% uptime in production environment",
-      "Processed over 1 million customer interactions",
-      "Implemented role-based access control for enhanced security"
+      "Achieved 99.9% uptime in production environment"
     ],
     technicalHighlights: [
       "Built with Next.js and TypeScript for type safety and performance",
       "Implemented tRPC for end-to-end type-safe API communication",
       "Created responsive UI with Tailwind CSS",
       "Developed efficient database schema with Prisma",
-      "Integrated NextAuth.js for secure authentication"
+      "Integrated NextAuth.js for secure authentication",
+      "Implemented role-based access control for enhanced security"
     ],
     links: {
       live: "https://app.wyvate.com",
@@ -253,14 +243,11 @@ The platform features a modern, responsive interface with robust security measur
       "TypeScript",
       "Redux Toolkit",
       "React Navigation",
-      "tRPC Client",
       "AsyncStorage",
       "Push Notifications",
       "Offline Support"
     ],
-    description: `Wyvate Customer App is a powerful mobile solution that extends the functionality of the Wyvate Customer Web platform to iOS and Android devices. Built with React Native and TypeScript, this app provides on-the-go access to customer management tools and real-time updates.
-
-The application features a native user experience with offline capabilities, push notifications, and seamless synchronization with the web platform. It leverages tRPC for type-safe API communication and Redux Toolkit for efficient state management, delivering a robust mobile solution for businesses.`,
+    description: `Wyvate Customer App is a powerful mobile solution that extends the functionality of the Wyvate Customer Web platform to iOS and Android devices. Built with React Native and TypeScript, this app provides on-the-go access to customer management tools and real-time updates. The application features a native user experience with offline capabilities, push notifications, and seamless synchronization with the web platform. Redux Toolkit for efficient state management, delivering a robust mobile solution for businesses.`,
     features: [
       {
         title: "Mobile Customer Profiles",
@@ -268,43 +255,67 @@ The application features a native user experience with offline capabilities, pus
         icon: "📱"
       },
       {
+        title: "Near by Vendors",
+        description: "Find and connect with nearby vendors",
+        icon: "🏪"
+      },
+      {
+        title: "Order Management",
+        description: "Track and manage customer orders, payments, invoices, realtime delivery status and delivery tracking",
+        icon: "🛒"
+      },
+      {
+        title: "Payment Gateway",
+        description: "Phone Pe and HDFC Bank Integrated payment gateway for seamless transactions, payment status and payment history",
+        icon: "💳"
+      },
+      {
+        title: "Customer Support",
+        description: "Customer support system for handling customer queries and complaints, realtime chat support, email support, phone support",
+        icon: "💬"
+      },
+      {
         title: "Real-time Notifications",
-        description: "Receive instant updates about customer activities",
+        description: "Receive instant updates about customer activities, order status, payment status, delivery status, customer support, etc.",
         icon: "🔔"
       },
       {
         title: "Offline Mode",
-        description: "Work with customer data even without internet connection",
+        description: "Work with customer data even without internet connection, all data is stored locally on the device",
         icon: "📶"
       },
       {
         title: "Quick Actions",
-        description: "Perform common tasks with minimal taps",
+        description: "Perform common tasks with minimal taps, like add new customer, add new order, add new payment, add new invoice, add new delivery, add new customer support, add new customer support chat, add new customer support email, add new customer support phone, add new customer support chat, add new customer support email, add new customer support phone",
         icon: "⚡"
       },
       {
-        title: "Document Scanner",
-        description: "Scan and upload customer documents directly from your device",
+        title: "QR Code Scanner",
+        description: "Scan QR codes and navigate to the respective vendor profile.",
         icon: "📷"
       },
       {
         title: "Location Services",
-        description: "Track customer visits and optimize travel routes",
+        description: "Track customer visits and optimize travel routes, like nearest vendor, nearest customer, nearest customer support, nearest customer support chat, nearest customer support email, nearest customer support phone",
         icon: "📍"
       }
     ],
     keyAchievements: [
-      "Achieved 4.7/5 rating on both App Store and Google Play",
-      "Reduced field service response time by 25%",
-      "Implemented offline-first architecture for reliable performance",
-      "Supported 10,000+ daily active users"
+      "On play store there are 500+ downloads and 20+ reviews",
+      "On app store there are 100+ downloads and 5+ reviews",
     ],
     technicalHighlights: [
       "Built cross-platform app with React Native and TypeScript",
       "Implemented offline data synchronization with AsyncStorage",
-      "Created intuitive navigation with React Navigation",
       "Integrated push notifications for real-time updates",
-      "Developed efficient state management with Redux Toolkit"
+      "Developed efficient state management with Redux Toolkit",
+      "Implemented real-time chat support with Socket.io",
+      "Implemented real-time payment status and payment history with Socket.io",
+      "Implemented real-time delivery status and delivery tracking with Socket.io",
+      "Implemented real-time customer support with Socket.io",
+      "Implemented real-time customer support chat with Socket.io",
+      "Implemented real-time customer support email with Socket.io",
+      "Implemented real-time customer support phone with Socket.io",
     ],
     links: {
       appStore: "https://apps.apple.com/in/app/wyvate/id6740251470",
@@ -315,7 +326,7 @@ The application features a native user experience with offline capabilities, pus
       appStore: "https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg",
       playStore: "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
     },
-    keywords: ["react native", "mobile app", "customer management", "offline support", "cross-platform"]
+    keywords: ["react native", "mobile app", "customer management", "offline support", "cross-platform", "socket.io", "payment gateway", "delivery tracking", "customer support", "chat support", "email support", "phone support"]
   },
   {
     id: "greenearth2",
@@ -334,10 +345,9 @@ The application features a native user experience with offline capabilities, pus
     techStack: [
       "Next.js",
       "Tailwind CSS",
-      "Firebase",
       "Node.js",
       "MongoDB",
-      "RESTful API"
+      "tRPC",
     ],
     description: `GreenEarth is an innovative web platform dedicated to promoting environmental sustainability and conscious living. This comprehensive solution combines e-commerce, education, and practical tools to help individuals and businesses reduce their environmental impact.
 
@@ -347,7 +357,7 @@ The platform features an intuitive marketplace for eco-friendly products, real-t
         title: "Eco-friendly Marketplace",
         description: "Connect with verified sustainable sellers and shop eco-conscious products",
         icon: "🌿"
-      },
+      },      
       {
         title: "Carbon Footprint Tracker",
         description: "Real-time monitoring and visualization of your environmental impact",
@@ -470,6 +480,84 @@ The platform features a user-friendly interface with a powerful code editor, sup
     links: {
       live: "https://codeeditor.com",
       github: "https://github.com/yourrepo/code-editor",
+      youtube: youtubeChannel
+    },
+    keywords: ["code execution", "sandbox", "programming", "security", "monaco editor"]
+  },
+  {
+    id: "web-watch",
+    name: "Web Watch",
+    tagline: "Monitor and Analyze Website Performance",
+    coverImages: [
+      "/comingsoon.jpg",
+      "/comingsoon.jpg",
+      "/comingsoon.jpg"
+    ],
+    screenshots: [
+      "/comingsoon.jpg",
+      "/comingsoon.jpg",
+      "/comingsoon.jpg"
+    ],
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "MongoDB",
+      "tRPC",
+    ],
+    description: `Web Watch is a web application that allows users to monitor and analyze website performance. The system provides a dashboard with real-time metrics and analytics to help users track website performance and identify issues.
+
+The platform features a user-friendly interface with a powerful dashboard, support for multiple websites, and real-time performance monitoring. Built with modern web technologies, Web Watch delivers a seamless performance monitoring experience while ensuring code execution security and performance.`,
+    features: [
+      {
+        title: "Website Monitoring",
+        description: "Monitor multiple websites and track their performance",
+        icon: "🌐"
+      },
+      {
+        title: "Performance Analytics",
+        description: "Analyze website performance metrics and identify issues",
+        icon: "📊"
+      },
+      {
+        title: "User Authentication",
+        description: "Secure login with JWT and rate limiting",
+        icon: "🔐"
+      },
+      { 
+        title: "User Management",
+        description: "Manage user accounts and permissions",
+        icon: "👤"
+      },
+      {
+        title: "Notification System",
+        description: "Send notifications to users about website performance",
+        icon: "🔔"    
+      },
+      {
+        title: "Real-Time Analytics",
+        description: "View real-time website performance metrics",
+        icon: "📈"
+      },
+      {
+        title: "Security Features",   
+        description: "Secure login with JWT and rate limiting",
+        icon: "🔐"
+      }
+    ],
+    keyAchievements: [
+      "Developed plagiarism detection with 80% similarity threshold"
+    ],
+    technicalHighlights: [
+      "Developed JWT authentication with rate limiting",
+      "Created PostgreSQL database schema for users and submissions",
+      "Built RESTful API for code execution and retrieval",
+      "Implemented real-time analytics with Socket.io",
+      "Implemented real-time notifications with Socket.io"
+    ],
+    links: {
+      live: "",
+      github: "https://github.com/ravi-gangwar/webwatch",
       youtube: youtubeChannel
     },
     keywords: ["code execution", "sandbox", "programming", "security", "monaco editor"]

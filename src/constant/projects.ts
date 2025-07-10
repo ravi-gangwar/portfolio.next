@@ -66,5 +66,17 @@ export const projectsData: ProjectsCategory[] = [
         id: 'guidex',
       },
     ],
+  },
+  {
+    title: 'Upcoming Projects',
+    projects: [
+      {
+        githubLink: 'https://github.com/ravi-gangwar/webwatch',
+        liveLink: '',
+        image: '/comingsoon.jpg',
+        name: 'Web Watch',
+        id: 'web-watch',
+      },
+    ],
   }
 ];

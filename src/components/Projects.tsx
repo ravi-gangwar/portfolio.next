@@ -30,9 +30,12 @@ const Projects = () => {
 
 const Heading = ({ name }: { name: string }) => {
   return (
-    <h2 className="text-xl w-full text-left sm:text-2xl font-bold text-white">
-      {name}
-    </h2>
+    <div className="w-full px-2 py-2 mb-2">
+      <h2 className="text-white text-base sm:text-lg font-bold tracking-wide mb-1">
+        {name}
+      </h2>
+      <div className="h-0.5 w-10 bg-zinc-700 rounded-full" />
+    </div>
   );
 };
 

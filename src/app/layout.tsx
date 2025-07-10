@@ -39,7 +39,7 @@ export default function RootLayout({
           property="og:description"
           content="Ravi Gangwar Portfolio Website"
         />
-        <meta property="og:image" content="/opengraph-image.png" />
+        <meta property="og:image" content="/opengraph-image.jpeg" />
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </header>

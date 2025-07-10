@@ -33,7 +33,7 @@ export const skills = [
     skills: [
       { name: "React Router", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { name: "Axios", image: "https://www.vectorlogo.zone/logos/axios/axios-icon.svg" },
-      { name: "Styled Components", image: "https://www.vectorlogo.zone/logos/styled-components/styled-components-icon.svg" },
+      // { name: "Styled Components", image: "https://www.vectorlogo.zone/logos/styled-components/styled-components-icon.svg" },
       { name: "Framer Motion", image: "https://www.vectorlogo.zone/logos/framer/framer-icon.svg" },
       { name: "Redux Toolkit", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
       { name: "Formik", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg" },
@@ -59,7 +59,6 @@ export const skills = [
     category: "devops",
     skills: [
       { name: "AWS", image: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" },
-      { name: "Azure", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
       { name: "Google Cloud", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
       { name: "Jenkins", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
       { name: "Kubernetes", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
