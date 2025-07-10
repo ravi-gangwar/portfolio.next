@@ -1,12 +1,6 @@
 "use client";
 import { useAppContext } from "@/context/AppContext";
-import {
-  FaHome,
-  FaProjectDiagram,
-  FaUserTie,
-  FaTools,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaHome, FaEnvelope } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -50,17 +44,17 @@ const MenuModal = () => {
         <nav className="flex flex-col items-center space-y-6 text-white text-lg font-medium">
           {[
             { name: "Home", icon: <FaHome />, href: "/" },
-            {
-              name: "Projects",
-              icon: <FaProjectDiagram />,
-              href: "?tab=projects",
-            },
-            {
-              name: "Experience",
-              icon: <FaUserTie />,
-              href: "?tab=experience",
-            },
-            { name: "Skills", icon: <FaTools />, href: "?tab=skills" },
+            // {
+            //   name: "Projects",
+            //   icon: <FaProjectDiagram />,
+            //   href: "?tab=projects",
+            // },
+            // {
+            //   name: "Experience",
+            //   icon: <FaUserTie />,
+            //   href: "?tab=experience",
+            // },
+            // { name: "Skills", icon: <FaTools />, href: "?tab=skills" },
             {
               name: "Connect",
               icon: <FaEnvelope />,

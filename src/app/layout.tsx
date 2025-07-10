@@ -5,6 +5,7 @@ import { AppProvider } from "@/context/AppContext";
 import MenuModal from "@/components/MenuModal";
 import Nav from "@/components/Nav";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Ravi Gangwar",
@@ -51,6 +52,7 @@ export default function RootLayout({
                         lg:border lg:border-zinc-700"
         >
           <AppProvider>
+            <Header />
             {children}
             <Nav />
             <MenuModal />

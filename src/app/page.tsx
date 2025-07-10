@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HomeScreen from "@/screens/Home";
 import Head from "next/head";
 
@@ -9,7 +8,6 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <div className="w-full">
-        <Header />
         <main className="pt-2 flex-1">
           <HomeScreen />
         </main>
