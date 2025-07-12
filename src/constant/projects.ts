@@ -65,6 +65,25 @@ export const projectsData: ProjectsCategory[] = [
         name: 'guideX',
         id: 'guidex',
       },
+      {
+        githubLink: 'https://github.com/ravi-gangwar/URL_SHORTNER',
+        liveLink: '',
+        image: '/urlshortner.png',
+        name: 'URL Shortner',
+        id: 'url-shortener',
+      },
+    ],
+  },
+  {
+    title: 'Hackathon Projects',
+    projects: [
+      {
+        githubLink: 'https://github.com/ravi-gangwar/Static_Odoo',
+        liveLink: 'https://stackit.ravigangwar.cv',
+        image: '/stackIt.png',
+        name: 'StackIt',
+        id: 'stackit',
+      },
     ],
   },
   {
@@ -78,5 +97,5 @@ export const projectsData: ProjectsCategory[] = [
         id: 'web-watch',
       },
     ],
-  }
+  },
 ];

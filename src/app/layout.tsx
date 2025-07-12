@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 export const metadata: Metadata = {
   title: "Ravi Gangwar",
   description: "Ravi Gangwar Portfolio Website",
-  metadataBase: new URL("https://ravigangwar.vercel.app"),
+  metadataBase: new URL("https://ravigangwar.cv"),
 };
 
 const aldrich = Aldrich({

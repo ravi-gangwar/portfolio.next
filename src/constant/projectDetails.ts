@@ -1,3 +1,44 @@
+import {
+  Link2,
+  BarChart2,
+  ShieldCheck,
+  AlarmClock,
+  CheckCircle2,
+  AlertTriangle,
+  PencilLine,
+  ThumbsUp,
+  Tags,
+  Bell,
+  Users,
+  Search,
+  Shield,
+  Keyboard,
+  Bot,
+  Bookmark,
+  BookOpen,
+  BookText,
+  User,
+  UserCircle,
+  ClipboardList,
+  FileText,
+  Plug,
+  Smartphone,
+  Store,
+  ShoppingCart,
+  CreditCard,
+  Wifi,
+  Zap,
+  QrCode,
+  MapPin,
+  Globe,
+  PieChart,
+  Lock,
+  MessageCircle,
+  ListChecks,
+  Building2,
+  TrendingUp,
+  Folder,
+} from "lucide-react";
 const youtubeChannel = "https://www.youtube.com/@ravi-gangwar"
 export const projectData = [
   {
@@ -29,32 +70,32 @@ The extension features customizable navigation shortcuts, action automation, and
       {
         title: "Custom Navigation Shortcuts",
         description: "Create and manage personalized keyboard shortcuts for quick navigation",
-        icon: "⌨️"
+        icon: Keyboard
       },
       {
         title: "Action Automation",
         description: "Record and replay browser actions to automate repetitive tasks",
-        icon: "🤖"
+        icon: Bot
       },
       {
         title: "Smart Bookmarks",
         description: "Organize and access bookmarks with intelligent categorization",
-        icon: "🔖"
+        icon: Bookmark
       },
       {
         title: "Tab Management",
         description: "Efficiently organize and switch between browser tabs",
-        icon: "📑"
+        icon: Folder
       },
       {
         title: "User Scripts",
         description: "Create and run custom scripts to enhance website functionality",
-        icon: "📜"
+        icon: BookText
       },
       {
         title: "Cross-Device Sync",
         description: "Synchronize settings and shortcuts across devices",
-        icon: "🔄"
+        icon: Wifi
       }
     ],
     keyAchievements: [
@@ -102,32 +143,32 @@ The platform features an eco-friendly marketplace, carbon footprint tracking, an
       {
         title: "Eco-friendly Marketplace",
         description: "Browse and purchase sustainable products from verified vendors",
-        icon: "🌿"
+        icon: Store
       },
       {
         title: "Carbon Footprint Tracker",
         description: "Monitor and visualize your environmental impact",
-        icon: "📊"
+        icon: PieChart
       },
       {
         title: "Sustainability Education",
         description: "Access comprehensive resources for green living",
-        icon: "📚"
+        icon: BookOpen
       },
       {
         title: "Community Platform",
         description: "Connect with like-minded individuals and share practices",
-        icon: "👥"
+        icon: Users
       },
       {
         title: "Impact Analytics",
         description: "Track your environmental contributions over time",
-        icon: "📈"
+        icon: TrendingUp
       },
       {
         title: "Green Business Directory",
         description: "Discover sustainable businesses in your area",
-        icon: "🏢"
+        icon: Building2
       }
     ],
     keyAchievements: [
@@ -178,32 +219,32 @@ The platform features a modern, responsive interface with robust security measur
       {
         title: "Customer Profile Management",
         description: "Comprehensive customer data storage and organization",
-        icon: "👤"
+        icon: UserCircle
       },
       {
         title: "Communication Hub",
         description: "Integrated messaging and notification system",
-        icon: "💬"
+        icon: MessageCircle
       },
       {
         title: "Analytics Dashboard",
         description: "Real-time insights and reporting tools",
-        icon: "📊"
+        icon: BarChart2
       },
       {
         title: "Task Management",
         description: "Create and track customer-related tasks",
-        icon: "✅"
+        icon: ListChecks
       },
       {
         title: "Document Management",
         description: "Secure storage and sharing of customer documents",
-        icon: "📄"
+        icon: FileText
       },
       {
         title: "Integration Capabilities",
         description: "Connect with other business tools and services",
-        icon: "🔌"
+        icon: Plug
       }
     ],
     keyAchievements: [
@@ -252,52 +293,52 @@ The platform features a modern, responsive interface with robust security measur
       {
         title: "Mobile Customer Profiles",
         description: "Access and update customer information on the go",
-        icon: "📱"
+        icon: Smartphone
       },
       {
         title: "Near by Vendors",
         description: "Find and connect with nearby vendors",
-        icon: "🏪"
+        icon: Store
       },
       {
         title: "Order Management",
         description: "Track and manage customer orders, payments, invoices, realtime delivery status and delivery tracking",
-        icon: "🛒"
+        icon: ShoppingCart
       },
       {
         title: "Payment Gateway",
         description: "Phone Pe and HDFC Bank Integrated payment gateway for seamless transactions, payment status and payment history",
-        icon: "💳"
+        icon: CreditCard
       },
       {
         title: "Customer Support",
         description: "Customer support system for handling customer queries and complaints, realtime chat support, email support, phone support",
-        icon: "💬"
+        icon: MessageCircle
       },
       {
         title: "Real-time Notifications",
         description: "Receive instant updates about customer activities, order status, payment status, delivery status, customer support, etc.",
-        icon: "🔔"
+        icon: Bell
       },
       {
         title: "Offline Mode",
         description: "Work with customer data even without internet connection, all data is stored locally on the device",
-        icon: "📶"
+        icon: Wifi
       },
       {
         title: "Quick Actions",
         description: "Perform common tasks with minimal taps, like add new customer, add new order, add new payment, add new invoice, add new delivery, add new customer support, add new customer support chat, add new customer support email, add new customer support phone, add new customer support chat, add new customer support email, add new customer support phone",
-        icon: "⚡"
+        icon: Zap
       },
       {
         title: "QR Code Scanner",
         description: "Scan QR codes and navigate to the respective vendor profile.",
-        icon: "📷"
+        icon: QrCode
       },
       {
         title: "Location Services",
         description: "Track customer visits and optimize travel routes, like nearest vendor, nearest customer, nearest customer support, nearest customer support chat, nearest customer support email, nearest customer support phone",
-        icon: "📍"
+        icon: MapPin
       }
     ],
     keyAchievements: [
@@ -356,32 +397,32 @@ The platform features an intuitive marketplace for eco-friendly products, real-t
       {
         title: "Eco-friendly Marketplace",
         description: "Connect with verified sustainable sellers and shop eco-conscious products",
-        icon: "🌿"
+        icon: Store
       },      
       {
         title: "Carbon Footprint Tracker",
         description: "Real-time monitoring and visualization of your environmental impact",
-        icon: "📊"
+        icon: PieChart
       },
       {
         title: "Sustainability Education",
         description: "Access comprehensive resources and guides for green living",
-        icon: "📚"
+        icon: BookOpen
       },
       {
         title: "Community Platform",
         description: "Connect with like-minded individuals and share sustainable practices",
-        icon: "👥"
+        icon: Users
       },
       {
         title: "Impact Analytics",
         description: "Track and visualize your environmental contributions",
-        icon: "📈"
+        icon: TrendingUp
       },
       {
         title: "Green Business Directory",
         description: "Discover and support sustainable businesses in your area",
-        icon: "🏢"
+        icon: Building2
       }
     ],
     keyAchievements: [
@@ -436,32 +477,32 @@ The platform features a user-friendly interface with a powerful code editor, sup
       {
         title: "Multi-Language Support",
         description: "Write and execute code in Java, JavaScript, Python, and more",
-        icon: "💻"
+        icon: Keyboard
       },
       {
         title: "Secure Execution",
         description: "Sandboxed environment with Docker for safe code execution",
-        icon: "🔒"
+        icon: Lock
       },
       {
         title: "Real-Time Feedback",
         description: "Instant execution results, errors, and performance metrics",
-        icon: "⚡"
+        icon: Zap
       },
       {
         title: "Code History",
         description: "Save and review your past code submissions",
-        icon: "📝"
+        icon: ClipboardList
       },
       {
         title: "Anti-Cheating",
         description: "Plagiarism detection and execution fingerprinting",
-        icon: "🛡️"
+        icon: Shield
       },
       {
         title: "User Authentication",
         description: "Secure login with JWT and rate limiting",
-        icon: "🔐"
+        icon: Lock
       }
     ],
     keyAchievements: [
@@ -512,37 +553,37 @@ The platform features a user-friendly interface with a powerful dashboard, suppo
       {
         title: "Website Monitoring",
         description: "Monitor multiple websites and track their performance",
-        icon: "🌐"
+        icon: Globe
       },
       {
         title: "Performance Analytics",
         description: "Analyze website performance metrics and identify issues",
-        icon: "📊"
+        icon: BarChart2
       },
       {
         title: "User Authentication",
         description: "Secure login with JWT and rate limiting",
-        icon: "🔐"
+        icon: Lock
       },
       { 
         title: "User Management",
         description: "Manage user accounts and permissions",
-        icon: "👤"
+        icon: User
       },
       {
         title: "Notification System",
         description: "Send notifications to users about website performance",
-        icon: "🔔"    
+        icon: Bell
       },
       {
         title: "Real-Time Analytics",
         description: "View real-time website performance metrics",
-        icon: "📈"
+        icon: TrendingUp
       },
       {
         title: "Security Features",   
         description: "Secure login with JWT and rate limiting",
-        icon: "🔐"
+        icon: Shield
       }
     ],
     keyAchievements: [
@@ -561,5 +602,173 @@ The platform features a user-friendly interface with a powerful dashboard, suppo
       youtube: youtubeChannel
     },
     keywords: ["code execution", "sandbox", "programming", "security", "monaco editor"]
+  },
+  {
+    id: "url-shortener",
+    name: "URL Shortener",
+    tagline: "Mini URL Shortener API with Analytics",
+    coverImages: [
+      "/urlshortner.png",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "/urlshortner.png",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "JWT Authentication",
+      "Rate Limiting",
+      "URL Validation",
+      "Analytics"
+    ],
+    description: `URL Shortener is a robust REST API that transforms long URLs into short, manageable links. Built with Node.js and Express.js, this backend service provides secure URL shortening with comprehensive analytics and rate limiting capabilities.
+
+The API features URL validation, click tracking, expiration logic, and a clean RESTful interface. It's designed to handle high traffic with proper error handling and security measures, making it suitable for production use.`,
+    features: [
+      {
+        title: "URL Shortening",
+        description: "Convert long URLs to short, shareable links with custom codes",
+        icon: Link2
+      },
+      {
+        title: "Click Analytics",
+        description: "Track and visualize click statistics for each shortened URL",
+        icon: BarChart2
+      },
+      {
+        title: "URL Validation",
+        description: "Comprehensive validation to ensure only valid URLs are processed",
+        icon: CheckCircle2
+      },
+      {
+        title: "Rate Limiting",
+        description: "Prevent abuse with configurable rate limiting per user/IP",
+        icon: ShieldCheck
+      },
+      {
+        title: "Expiration Logic",
+        description: "Set custom expiration dates for temporary links",
+        icon: AlarmClock
+      },
+      {
+        title: "Error Handling",
+        description: "Robust error handling with meaningful HTTP status codes",
+        icon: AlertTriangle
+      }
+    ],
+    keyAchievements: [
+      "Handles 1000+ URL shortening requests per minute",
+      "99.9% uptime with proper error handling",
+      "Implemented comprehensive URL validation"
+    ],
+    technicalHighlights: [
+      "Built RESTful API with Express.js and TypeScript",
+      "Implemented MongoDB schema for URL storage and analytics",
+      "Added rate limiting middleware for API protection",
+      "Created URL validation with regex patterns",
+      "Developed click tracking and analytics system",
+      "Implemented JWT authentication for secure access"
+    ],
+    links: {
+      live: "https://url-shortener.ravigangwar.cv",
+      github: "https://github.com/ravi-gangwar/url-shortener",
+      youtube: youtubeChannel
+    },
+    keywords: ["url shortener", "api", "node.js", "express", "analytics", "rate limiting"]
+  },
+  {
+    id: "stackit",
+    name: "StackIt",
+    tagline: "Minimal Q&A Forum Platform",
+    coverImages: [
+      "/stackIt.png",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    screenshots: [
+      "/stackIt.png",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "tRPC",
+      "NextAuth.js",
+      "Rich Text Editor",
+      "Socket.io"
+    ],
+    description: `StackIt is a collaborative Q&A forum platform designed for structured knowledge sharing and learning. Built with Next.js and TypeScript, this platform provides a modern interface for asking questions, providing answers, and engaging in meaningful discussions.
+
+The platform features a rich text editor, voting system, tagging mechanism, and real-time notifications. It supports multiple user roles including guests, registered users, and administrators, making it suitable for educational institutions and communities.`,
+    features: [
+      {
+        title: "Rich Text Editor",
+        description: "Advanced editor with formatting, emojis, images, and hyperlinks",
+        icon: PencilLine
+      },
+      {
+        title: "Voting System",
+        description: "Upvote/downvote questions and answers to highlight quality content",
+        icon: ThumbsUp
+      },
+      {
+        title: "Tagging System",
+        description: "Multi-select tags for better content organization and discovery",
+        icon: Tags
+      },
+      {
+        title: "Real-time Notifications",
+        description: "Instant notifications for answers, comments, and mentions",
+        icon: Bell
+      },
+      {
+        title: "User Roles",
+        description: "Guest, User, and Admin roles with appropriate permissions",
+        icon: Users
+      },
+      {
+        title: "Answer Acceptance",
+        description: "Mark answers as accepted to highlight the best solution",
+        icon: CheckCircle2
+      },
+      {
+        title: "Search & Filter",
+        description: "Advanced search with tag filtering and sorting options",
+        icon: Search
+      },
+      {
+        title: "Moderation Tools",
+        description: "Admin tools for content moderation and user management",
+        icon: Shield
+      }
+    ],
+    keyAchievements: [
+      "Built comprehensive Q&A platform with real-time features",
+      "Implemented advanced rich text editor with image uploads",
+      "Created robust notification system with Socket.io"
+    ],
+    technicalHighlights: [
+      "Developed with Next.js and TypeScript for type safety",
+      "Implemented rich text editor with formatting capabilities",
+      "Created real-time notification system using Socket.io",
+      "Built role-based access control for different user types",
+      "Integrated MongoDB with tRPC for type-safe database operations",
+      "Implemented advanced search and filtering functionality"
+    ],
+    links: {
+      live: "https://stackit.ravigangwar.cv",
+      github: "https://github.com/ravi-gangwar/stackit",
+      youtube: youtubeChannel
+    },
+    keywords: ["qa forum", "collaborative learning", "rich text editor", "voting system", "real-time notifications"]
   }
 ];
