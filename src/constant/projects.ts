@@ -15,7 +15,7 @@ type ProjectsCategory = {
 
 export const projectsData: ProjectsCategory[] = [
   {
-    title: 'Featured Production Projects (Built from Scratch)',
+    title: 'Featured Production Projects',
     projects: [
       {
         appleStoreLink: 'https://apps.apple.com/in/app/wyvate/id6740251470',
@@ -33,7 +33,7 @@ export const projectsData: ProjectsCategory[] = [
     ],
   },
   {
-    title: 'Personal Projects (Built for learning)',
+    title: 'Personal Projects',
     projects: [
       {
         githubLink: 'https://github.com/ravi-gangwar/greenEarth2.0',
